@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />-->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Welcome to AlphaLMS</title>
+        <link rel="shortcut icon" href="img/favicon.png">
+
+        <!-- Bootstrap CSS CDN -->
+        <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="css/intlTelInput.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/register.css">
+        <link rel="stylesheet" href="css/profile.css">
+
+
+        <!-- Font Awesome JS -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="dashboard-body">
+
+        <div class="top_nav">
+            <img src="img/top_strip.jpg" class="img-fluid position-absolute" />
+            <div class="container-fluid dashboard_nav py-0">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand py-0" href="#"><img src="img/Alpher-logo-full-white.png" style="width: 100px" class="mt-2" alt="Davton logo" width="" /></a>
+                    <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav navbar-nav ml-auto">
+
+                            <li class="nav-item px-md-1">
+                                <a class="nav-link text-dark" href="message.html" data-target="#acc_details">
+                                    <img src="img/mail.svg" alt="Messages" class="mt-1">
+                                </a>
+                            </li>
+
+                            <li class="nav-item px-md-1 d-none">
+                                <a class="nav-link text-dark" href="#" data-target="#acc_details">
+                                    <img src="img/notification.svg" alt="user name" class="">
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown pr-md-4 pl-2">
+                                <a class="nav-link text-white dropdown-toggle" href="#" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="py-1 px-2" style="border-radius: 3px; background-color: white; color: #14AD51">M</span>&nbsp; &nbsp; Hr247@asanta.com &nbsp;
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
+                                    <a class="dropdown-item font-12" href="#">Log Out</a>
+                                    <a class="dropdown-item font-12" href="settings.html">Setting</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar" class="">
+                <div class="sidebar-header">
+                    <button type="button" id="sidebarCollapse-1" class="btn bg-trans d-none">
+                        <img src="img/hamburger.svg" />
+                    </button>
+                </div>
+
+
+                <ul class="list-unstyled components">
+                    <p class="text-dark text-left ml-4 mb-2 font-35">Hi Adeyemi Inc. </p>
+                    <p class="text-dull text-left ml-4 my-2 font-14 font-weight-light">Hr247@asanta.com</p>
+
+                    <li>
+                        <a href="index.html">
+                            <i class="mdi mdi-view-dashboard fs-20"></i>
+                            Dashboard
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="request.html">
+                            <i class="mdi mdi-table fs-20"></i> 
+                             View Requests
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#promoteModal">
+                            <i class="mdi mdi-sale fs-20"></i> 
+                            Promote your business
+                        </a>
+
+                    </li>
+
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Learning</p>
+
+                    <li>
+                        <a href="courses.html">
+                            <i class="mdi mdi-book fs-20"></i> All Courses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="enrolled.html">
+                            <i class="mdi mdi-book-open fs-20"></i>
+                            Enrolled Courses
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Services</p>
+
+                    <li>
+                        <a href="discounted.html">
+                            <i class="mdi mdi-room-service fs-20"></i>
+                            Discounted Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="webinar.html">
+                            <i class="mdi mdi-webcam fs-20"></i>
+                            Webinar
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="events.html">
+                            <i class="mdi mdi-calendar-clock fs-20"></i>
+                             Events
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="loans.html">
+                            <i class="mdi mdi-cash-refund fs-20"></i>
+                             Loans & Grants
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mentorship.html">
+                            <i class="mdi mdi-account-box-multiple fs-20"></i>
+                            Mentorship
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="interest.html">
+                            <i class="mdi mdi-shape fs-20"></i>
+                            Interest & Opportunity
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Communications</p>
+
+                    <li>
+                        <a href="message.html">
+                            <i class="mdi mdi-email fs-20"></i>
+                            Message
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="articles.html">
+                            <i class="mdi mdi-newspaper fs-20"></i>
+                            Blog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">
+                            <i class="mdi mdi-chat-processing fs-20"></i>
+                            Community
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Account Management</p>
+
+                    <li>
+                        <a href="https://uniononline.unionbankng.com/OnlineBanking/" target="_blank">
+                            <i class="mdi mdi-bank-transfer-in fs-20"></i>
+                            Internet Banking
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.unionbankng.com/personal/accounts/" target="_blank">
+                            <i class="mdi mdi-key fs-20"></i>
+                            Open an Account
+                        </a>
+                    </li>
+
+                    <li class="active">
+                        <a href="settings.html">
+                            <i class="mdi mdi-account-settings fs-20"></i>Profile
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="mdi mdi-power fs-20"></i>
+                             Log Out
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="dasboard-top-wrapper">
+
+            </div>
+
+            <!-- Page Content  -->
+            <div id="content" class="mt-md-4">
+
+                <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light d-none display border">
+                    <div class="container-fluid">
+                        <button id="sidebarCollapse" class="btn bg-trans d-inline-block d-lg-none ml-auto" type="button">
+                            <i alt="menu" class="fas fa-align-justify text-consolidated"></i>
+                        </button>
+                    </div>
+                </nav>
+
+                <div class="row mx-md-2">
+
+                    <div class="col-md-3 my-3">
+                        <div class="card--dashboard profile-height-default">
+                            <div class="">
+                                <form class="">
+
+                                    <div class="wrap-custom-file">
+                                        <input type="file" name="image1" id="image1" accept=".gif, .jpg, .png" />
+                                        <label  for="image1">
+                                        <div class="overlay"></div>
+                                          <i class="fas fa-camera" style="position: absolute;bottom: 43%;font-size: 20px;color: #fff;left: 43%;"></i>
+                                        </label>
+                                    </div>
+
+                                    <div class="px-2 text-center">
+                                        <div class="row my-3">
+                                            <div class="font-12 col-lg-7 text-lg-left">Date Joined:</div>
+                                            <div class="font-12 col text-md-right">28-03-2019</div>
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="font-12 col-lg-8 text-lg-left">Enrolled Course:</div>
+                                            <div class="font-12 col text-md-right">07</div>
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="font-12 col-lg-8 text-lg-left">Status:</div>
+                                            <div class="font-12 col text-md-right">Active</div>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8 my-3">
+                        <div class="card--dashboard">
+                            <div class="d-flex border-bottom">
+                                <div class="col px-4">
+                                    <h5 class="text-grey my-2 weight-semi-bold">My Profile</h5>                                
+                                </div>
+                            </div>
+
+                            <div class="row mt-3 px-4">
+                                <div class="col-lg-12 mt-3 mb-5">
+                                    <form action="#" class="instructor-form pt-0">
+                                        <div class="row ind group">
+                                            <div class="col-12 col-md-6 form-group">
+                                                <label for="fname" class="sr-only">Firstname</label>
+                                                <input class="form-control" type="text" id="fname" name="fname" placeholder="Your Firstname *" required>
+                                            </div>
+                                            <div class="col-12 col-md-6 form-group">
+                                                <label for="sname" class="sr-only">Surname</label>
+                                                <input class="form-control" type="text" id="sname" name="sname" placeholder="Your Surname *" required>
+                                            </div>
+                                            <div class="col-12 col-md-6 form-group">
+                                                <label for="email" class="sr-only">Your Email Address</label>
+                                                <input class="form-control" type="email" id="email" name="email" placeholder="Your Email Address*" required>
+                                            </div>
+                                            <div class="col-12 col-md-6 form-group">
+                                                <label for="phone" class="sr-only">Phone Number</label>
+                                                <input name="phone" type="tel" class="phone form-control element-block pl-5"  required>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <label for="text" class="sr-only">State of Residence</label>
+                                                <select name="state" id="state" class="form-control mb-3" required>
+                                                      <option value="" selected="selected" > Select State of Residence </option>
+                                                      <option value='Abia'>Abia</option>
+                                                      <option value='Adamawa'>Adamawa</option>
+                                                      <option value='AkwaIbom'>AkwaIbom</option>
+                                                      <option value='Anambra'>Anambra</option>
+                                                      <option value='Bauchi'>Bauchi</option>
+                                                      <option value='Bayelsa'>Bayelsa</option>
+                                                      <option value='Benue'>Benue</option>
+                                                      <option value='Borno'>Borno</option>
+                                                      <option value='Cross River'>Cross River</option>
+                                                      <option value='Delta'>Delta</option>
+                                                      <option value='Ebonyi'>Ebonyi</option>
+                                                      <option value='Edo'>Edo</option>
+                                                      <option value='Ekiti'>Ekiti</option>
+                                                      <option value='Enugu'>Enugu</option>
+                                                      <option value='FCT'>FCT</option>
+                                                      <option value='Gombe'>Gombe</option>
+                                                      <option value='Imo'>Imo</option>
+                                                      <option value='Jigawa'>Jigawa</option>
+                                                      <option value='Kaduna'>Kaduna</option>
+                                                      <option value='Kano'>Kano</option>
+                                                      <option value='Katsina'>Katsina</option>
+                                                      <option value='Kebbi'>Kebbi</option>
+                                                      <option value='Kogi'>Kogi</option>
+                                                      <option value='Kwara'>Kwara</option>
+                                                      <option value='Lagos'>Lagos</option>
+                                                      <option value='Nasarawa'>Nasarawa</option>
+                                                      <option value='Niger'>Niger</option>
+                                                      <option value='Ogun'>Ogun</option>
+                                                      <option value='Ondo'>Ondo</option>
+                                                      <option value='Osun'>Osun</option>
+                                                      <option value='Oyo'>Oyo</option>
+                                                      <option value='Plateau'>Plateau</option>
+                                                      <option value='Rivers'>Rivers</option>
+                                                      <option value='Sokoto'>Sokoto</option>
+                                                      <option value='Taraba'>Taraba</option>
+                                                      <option value='Yobe'>Yobe</option>
+                                                      <option value='Zamfara'>Zamafara</option>
+                                                </select>
+                                            </div>                                   
+                                            <div class="col-12 col-md-6">
+                                                <select class="form-control" name="gender" id="gender" required>
+                                                    <option selected="true" disabled="disabled" value="">Select Gender</option>
+                                                    <option value="ind">Male</option>
+                                                    <option value="bus">Female</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <select class="form-control" name="religion" id="religion" id="" required>
+                                                    <option selected="true" disabled="disabled" value="">Religion</option>
+                                                    <option value="chr">Christian</option>
+                                                    <option value="isl">Islam</option>
+                                                    <option value="oth">Others</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-md-6 form-group">
+                                                <label for="datepicker" class="sr-only">DOB</label>
+                                                <input class="form-control" id="datepicker" name="DOB" placeholder="DOB *" required/>
+                                            </div>
+                                            <div class="col-12 col-md-6 form-group">
+                                                <input class="form-control" type="text" id="other-religion" name="other-religion" placeholder="Others (Specify Religion)" style="display: none;">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-12 form-group">
+                                            <select class="form-control" name="hear" id="hear" required>
+                                                <option selected="true" disabled="disabled" value="">How did you hear about us? </option>
+                                                <option>Live events</option>
+                                                <option>Union Bank</option>
+                                                <option>alpherwoman.com</option>
+                                                <option>Internet search engine</option>
+                                                <option>Social Media</option>
+                                                <option>A friend/family member</option>
+                                                <option>Radio, TV / Print Media</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                            <input class="form-control optional" type="text" id="other-reason" name="other-reason" placeholder="Others (Specify)" style="display: none;">
+                                        </div>
+
+                                        <div class="form-row px-2 mb-2 interest-check required">
+                                            <label for="" class="text-grey w-100">Select your interest(s)</label>
+                                            <div class="form-check col-md-4 pl-4">
+
+                                                <input name="user_interest_ids[]" id="user_interest_ids-1" class="form-check-input" type="checkbox" value="1" required>
+                                                <label class="mb-2">Health</label>
+                                            </div>
+                                            <div class="form-check col-md-4 pl-4">
+
+                                                <input name="user_interest_ids[]" id="user_interest_ids-2" class="form-check-input" type="checkbox" value="2" required>
+                                                <label class="mb-2">Family</label>
+                                            </div>
+                                            <div class="form-check col-md-4 pl-4">
+
+                                                <input name="user_interest_ids[]" id="user_interest_ids-3" class="form-check-input" type="checkbox" value="3" required>
+                                                <label class="mb-2">Lifestyle</label>
+                                            </div>
+                                            <div class="form-check col-md-4 pl-4">
+
+                                                <input name="user_interest_ids[]" id="user_interest_ids-4" class="form-check-input" type="checkbox" value="4" required>
+                                                <label class="mb-2">Career</label>
+                                            </div>
+                                            <div class="form-check col-md-4 pl-4">
+
+                                                <input name="user_interest_ids[]" id="user_interest_ids-5" class="form-check-input" type="checkbox" value="5" required>
+                                                <label class="mb-2">Technology</label>
+                                            </div>
+                                            <div class="form-check col-md-4 pl-4">
+
+                                                <input name="user_interest_ids[]" id="user_interest_ids-6" class="form-check-input" type="checkbox" value="6" required>
+                                                <label class="mb-2">Personal Growth</label>
+                                            </div>
+                                            <div class="form-check col-md-4 pl-4">
+
+                                                <input name="user_interest_ids[]" id="user_interest_ids-7" class="form-check-input" type="checkbox" value="7" required>
+                                                <label class="mb-2">Entrepreneurship</label>
+                                            </div>
+                                            <div class="form-check col-md-4 pl-4">
+
+                                                <input name="user_interest_ids[]" id="user_interest_ids-8" class="form-check-input" type="checkbox" value="8" required>
+                                                <label class="mb-2">Leadership</label>
+                                            </div>
+                                            <div class="form-check col-md-4 pl-4">
+
+                                                <input name="user_interest_ids[]" id="user_interest_ids-9" class="form-check-input" type="checkbox" value="9" required>
+                                                <label class="mb-2">Finance</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-9 mx-auto single-input mb-3 acc-sel">
+                                            <select name="acctype" id="quest" required>
+                                                <option selected="true" disabled="disabled" value="">Who are you?</option>
+                                                <option value="professional">A Professional</option>
+                                                <option value="business">A Business Owner</option>
+                                                <option value="others">Others</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="row oths group">
+                                            <div class="col-12 form-group">
+                                                <input class="form-control optional" type="text" id="other-occupation" name="other-occupation" placeholder="Others (Specify)">
+                                            </div>
+                                        </div>
+
+                                        <div class="row bus group">
+                                            <div class="col-12 col-md-6 form-group">
+                                                <label for="bname" class="sr-only">Business Name</label>
+                                                <input class="form-control optional" type="text" id="bname" name="bname" placeholder="Your Business Name *">
+                                            </div>
+                                            <div class="col-12 col-md-6 form-group">
+                                                <label for="bname" class="sr-only">Business Title</label>
+                                                <input class="form-control optional" type="text" id="btitle" name="btitle" placeholder="Your Business Title e.g = CEO *">
+                                            </div>
+                                            <div class="col-12 col-md-6 form-group">
+                                                <select class="form-control optional" name="bus-ind" id="bus-ind">
+                                                    <option selected="true" disabled="disabled" value="">Industry</option>
+                                                    <option value="">Agriculture</option>
+                                                    <option value="">Music </option>
+                                                    <option value="">Healthcare</option>
+                                                    <option value="">Movie</option>
+                                                    <option value="">Media and broadcasting</option>
+                                                    <option value="">Insurance</option>
+                                                    <option value="">Oil and gas</option>
+                                                    <option value="">Utility</option>
+                                                    <option value="">ICT</option>
+                                                    <option value="">Services</option>
+                                                    <option value="">Banking</option>
+                                                    <option value="">Real estate</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-md-6 form-group">
+                                                <select class="form-control optional" name="quest1" id="quest1">
+                                                    <option selected="true" disabled="disabled" value="">Is your business registered with CAC?</option>
+                                                    <option value="yes">Yes</option>
+                                                    <option value="no">No</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-md-12 form-group">
+                                                <select class="form-control optional" name="quest2" id="quest2">
+                                                    <option selected="true" disabled="disabled" value="">Is your business owned or managed by women?</option>
+                                                    <option value="yes">Yes</option>
+                                                    <option value="no">No</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-md-12 form-group">
+                                                <textarea class="form-control optional" rows="6" required="" id="brief-desc" placeholder="Brief description of your business *"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="row prof group">
+                                            <div class="col-12 col-md-6 form-group">
+                                                <label for="organ" class="sr-only">Organisation</label>
+                                                <input class="form-control optional" type="text" id="organ" name="organ" placeholder="Organisation *">
+                                            </div>
+                                            <div class="col-12 col-md-6 form-group">
+                                                <label for="job" class="sr-only">Job title</label>
+                                                <input class="form-control optional" type="text" id="job" name="job" placeholder="Job title e.g System Engineer*">
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="file-upload mb-3">
+                                                  <div class="file-select">
+                                                    <div class="file-select-button" id="fileName">Upload CV</div>
+                                                    <div class="file-select-name" id="noFile">No file chosen...</div> 
+                                                    <input type="file" name="chooseFile" id="chooseFile" accept=".doc,.docx,.pdf">
+                                                  </div>
+                                              </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 form-group">
+                                                <select class="form-control optional" name="org-ind" id="org-ind">
+                                                    <option selected="true" disabled="disabled" value="">Industry</option>
+                                                    <option value="">Agriculture</option>
+                                                    <option value="">Music </option>
+                                                    <option value="">Healthcare</option>
+                                                    <option value="">Movie</option>
+                                                    <option value="">Media and broadcasting</option>
+                                                    <option value="">Insurance</option>
+                                                    <option value="">Oil and gas</option>
+                                                    <option value="">Utility</option>
+                                                    <option value="">ICT</option>
+                                                    <option value="">Services</option>
+                                                    <option value="">Banking</option>
+                                                    <option value="">Real estate</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <select class="form-control optional" name="education" id="education">
+                                                    <option selected="true" disabled="disabled" value="">Highest Level of Education</option>
+                                                    <option value="bac">Bachelors</option>
+                                                    <option value="mas">Masters</option>
+                                                    <option value="doc">Doctorate</option>
+                                                </select>
+                                            </div>
+                                            
+                                            <div class="col-12 col-md-6 form-group">
+                                                <label for="linkedin" class="sr-only">LinkedIn</label>
+                                                <input class="form-control optional" type="text" id="linkedin" name="linkedin" placeholder="LinkedIn Handle">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 form-group mb-0 text-center sub">
+                                            <button type="submit" class="btn-primary w-100 py-2">Update Profile</button>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Start of itdacademy Zendesk Widget script -->
+        <!-- <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=fa65cc9e-a5f4-4497-90c1-4c51edcac049"> </script> -->
+        <!-- End of itdacademy Zendesk Widget script -->
+
+
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" ></script>
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/chart.js/dist/Chart.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+        <script src="js/jquery.nice-select.min.js"></script>
+        <script src="js/jquery.showPassword.js"></script>
+        <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+        <script src="js/intlTelInput.js"></script>
+        <script src="js/utility.js"></script>   
+        <script src="js/tagsinput.js"></script>
+        <script src="js/lga.js"></script>
+
+    </body>
+
+</html>

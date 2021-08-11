@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- set the viewport width and initial-scale on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- set the HandheldFriendly -->
+    <meta name="HandheldFriendly" content="True">
+    <!-- set the description -->
+    <meta name="description" content="Alpher">
+    <!-- set the Keyword -->
+    <meta name="keywords" content="">
+    <meta name="author" content="Alpher">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="../assets/img/alpher-fav.png" type="image/x-icon"/>
+    <!-- set the page title -->
+    <title>Alpher</title>
+    <!-- Fonts -->
+    <link href="assets/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="assets/css/webfont.css" rel="stylesheet">
+    <link href="assets/css/select2.min.css" rel="stylesheet" />
+    <!-- Core CSS -->
+
+    <!-- include the site bootstrap stylesheet -->
+    <link rel="stylesheet" href="assets/css/bulma.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/core.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/nice-select.css">
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <link rel="stylesheet" href="../assets/css/meanmenu.css">
+    <link rel="stylesheet" href="../assets/css/default.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+</head>
+
+<body>
+
+    <!-- Pageloader -->
+    <div class="pageloader"></div>
+    <div class="infraloader is-active"></div>
+    <div class="app-overlay"></div>
+
+
+    <header class="bg-white">
+        <!-- main header -->
+        <div class="main-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- header logo -->
+                    <div class="col-xl-2 col-lg-2 col-md-2 logo-wrapper mt-2 ml-5">
+                        <a href="index.html" class="mt-md-3 d-flex justify-content-start justify-content-xl-center">
+                            <img src="../assets/img/alpher-logo.png" alt="Logo" style="width: 100px;z-index: 99999;height: 40px">
+                        </a>
+                    </div>
+                    <!-- navigation -->
+                    <div class="col-xl-9 col-lg-9 col-md-9 nav-wrapper">
+                        <nav id="mobile-menu-active">
+                            <ul class="text-right">
+                                <li>
+                                    <a href="login.html" class="primary-btn">Service Marketing</a>
+                                </li>
+                                <li><a href="dash/mentorship.html">Mentorship</a></li>
+                                <li><a href="courses.html">Courses</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Financial Management</a></li>
+                                        <li><a href="">Marketing</a></li>
+                                        <li><a href="">Human Resource</a></li>
+                                        <li><a href="">Business Plan And Models</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="community/index.html">Community</a></li>
+                                <li><a href="#">Resources</a>
+                                    <ul class="sub-menu page">
+                                        <li><a href="dash/loans.html">Grants and Loans</a></li>
+                                        <li><a href="dash/webiar.html">Latest Webinar</a></li>
+                                        <li><a href="events.html">Events</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="login.html" class="primary-btn">Login</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- header link -->
+                    <!-- <div class="col-xl-2 col-lg-2 col-md-2 d-none d-md-block link-wrapper mt-md-4">
+                        <a href="login.html" class="primary-btn">Login</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu"></div>
+    </header>
+
+    <div class="chat-wrapper active is-active">
+        <div class="chat-inner">
+
+            <!-- Chat top navigation -->
+            <div class="chat-nav">
+                <div class="nav-start">
+                    <div class="recipient-block">
+                        <div class="avatar-container">
+                            <img class="user-avatar" src="" alt="">
+                        </div>
+                        <div class="username">
+                            <span style="display: flex;color: #000;font-weight: 500;"> </span>
+                            <span> <span style="font-size: 12px;"></span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Chat sidebar -->
+            <div id="chat-sidebar" class="users-sidebar">
+                <!-- Header -->
+                <div class="header-item">
+                    <div style="float: left;color: #009fe3;font-weight: 600;">MESSAGE</div>
+                    <div class="add-button modal-trigger composed" data-modal="add-conversation-modal"><i data-feather="edit"></i></div>
+                </div>
+                <!-- <div class="search-field">
+                    <i class="fa fa-search" style=""></i>
+                    <input type="text" placeholder="Start typing to search" >
+                </div> -->
+                <!-- User list -->
+                <div class="conversations-list has-slimscroll-xs" id="myDiv1">
+                    <div id="nomessage" style="text-align: center;">
+                        <img src="assets/images/nomessage.png">
+                        <a class="add-button modal-trigger text-primary" data-modal="add-conversation-modal" href="#">Start a Conversation</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat body -->
+            <div id="chat-body" class="chat-body is-opened">
+                <div id="myDiv2">
+                </div>
+                <!-- Compose message area -->
+                <div class="chat-action">
+                    <div class="chat-action-inner">
+                        <div class="control">
+                            <textarea class="textarea comment-textarea" rows="1" id="chat-text" autofocus=""></textarea>
+                            <div class="dropdown compose-dropdown">
+                                <div>
+                                    <div class="add-button">
+                                        <button class="button-inner" id="chat-send" disabled>
+                                            <i data-feather="send"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="add-conversation-modal" class="modal add-conversation-modal is-xsmall has-light-bg">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+
+            <div class="card">
+                <div class="card-heading">
+                    <h3>New Conversation</h3>
+                    <!-- Close X button -->
+                    <div class="close-wrap">
+                        <span class="close-modal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                            </span>
+                    </div>
+                </div>
+                <div class="card-body">
+
+                    <img src="assets/images/icons/chat/bubbles.svg" alt="">
+
+                    <div class="field is-autocomplete">
+                        <div class="control has-icon">
+                            <select class="js-example-basic-single w-100" name="state" id="select-contact">
+                              <option data-chat-user="korede" data-full-name="Korede Bello" data-status="online" data-demo-src="stella.jpg" data-id="2" data-last-seen="online">Korede Bello</option>
+                              <option data-chat-user="davids" data-full-name="Davids Kim" data-status="busy" data-demo-src="david.jpg" data-id="1" data-last-seen="5 mins Ago">Davids Kim</option>
+                            </select>
+                        </div>
+                        <!-- <select class="drop-down">
+                             <option value="0" data-name="AAA">A</option>
+                             <option value="1" data-name="BBB">B</option>
+                        </select> -->
+
+                    </div>
+
+
+                    <div class="help-text">
+                        Select a user to start a new conversation. You'll be able to add other users later.
+                    </div>
+
+                    <div class="action has-text-centered">
+                        <button type="button" class="button is-solid accent-button raised" id="target">Start conversation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Concatenated js plugins and jQuery -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Core js -->
+    <script src="assets/data/tipuedrop_content.js"></script>
+    <script src="assets/js/global.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Page and UI related js -->
+    <script src="assets/js/chat.js"></script>
+
+    <!-- Components js -->
+    <script src="assets/js/widgets.js"></script>
+    <script src="assets/js/autocompletes.js"></script>
+    <script src="assets/js/modal-uploader.js"></script>
+    <script src="assets/js/popovers-users.js"></script>
+    <script src="assets/js/popovers-pages.js"></script>
+    <script src="assets/js/go-live.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/touch.js"></script>
+    <script src="assets/js/tour.js"></script>
+
+    <!-- Plugins -->
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/jquery.meanmenu.min.js"></script>
+    <script src="../assets/js/isotope.pkgd.min.js"></script>
+    <script src="../assets/js/jquery.counterup.min.js"></script>
+    <script src="../assets/js/plugin.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".js-example-basic-single").select2({
+                placeholder: "Select a user",
+                allowClear: true
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.js-example-basic-multiple').select2();
+            $('.drop-down').select2().on("change", function(e) {
+                // var obj = $(".drop-down").select2("data");
+                // console.log("change val=" + obj[0].id);  // 0 or 1 on change
+            });
+        });
+
+        
+    </script>
+</body>
+
+</html>
