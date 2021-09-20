@@ -73,15 +73,32 @@
             max-width: 1400px;
         }
 
-        #notification {
-            width: 290px !important;
+        .connect-btn {
+            font-size: 14px !important;
+            font-weight: normal !important;
+            text-transform: capitalize !important;
+            background: #009fe3;
+            height: 30px;
+            padding: 0 35px;
+            line-height: normal;
+            border-radius: 50px !important;
+            -webkit-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+            -webkit-transition: all 0.4s ease;
+            -moz-transition: all 0.4s ease;
+            -ms-transition: all 0.4s ease;
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
         }
     </style>
 
 </head>
 
 <body>
-    <div class="body-inner bg-gray">
+    <div class="body-inner" style="background-image: url(./blog/images/bg.png);">
 
         <!-- Header start -->
         <header id="header" class="header header-transparent nav-border" style="z-index: 9">
@@ -95,7 +112,7 @@
                         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"><i class="icon icon-menu"></i></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown" style="">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown" >
                         <ul class="navbar-nav">
                             <li class="nav-item mr-2 d-none d-md-flex">
                                 <a class="" href="index.html">
@@ -157,84 +174,296 @@
                                     <span class="notify"></span>
                                 </a>
                                 <ul class="dropdown-menu bg-white" role="menu" id="notification">
+                                    <li class="position-fixed">
+                                        <a href="notifications.html" class="text-alpher text-center bg-white"
+                                            style="text-decoration: underline;">See all notifications</a>
+                                    </li>
+                                    <li style="margin-top: 47px;"></li>
                                     <li class="cursor-pointer bg-secondary mb-0">
-                                        <div class="d-flex pt-2 px-3 pb-0 mb-0">
+                                        <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
                                             <img src="./blog/images/course_img.png" alt="" class="avatar-imgg">
                                             <div class="mb-0">
                                                 <P class="ho ml-2 mb-0 text-muted "><span
                                                         class="font-weight-bold">Becca</span> wants to connect with you
                                                 </P>
                                             </div>
-                                            <p class="small text-muted ml-auto mt-3 mb-0">2s</p>
+                                            <p class="small text-muted ml-auto mb-0 mt-0">
+                                                <span class="bi h5 bi-x"></span>
+                                                2s</p>
                                         </div>
-                                        <hr class="mt-2 mb-0" style="opacity: 0.1;">
+                                        <hr class="mt-2 mb-0" style="opacity: 0.18;">
                                     </li>
                                     <li class="cursor-pointer mb-0">
-                                        <div class="d-flex pt-2 px-3 pb-0 mb-0">
+                                        <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
                                             <img src="./img/woman1.jpg" alt="" class="avatar-imgg">
                                             <div class="mb-0">
                                                 <P class="ho ml-2 mb-0 text-muted "><span
                                                         class="font-weight-bold">Roselyn</span> commented on your post
                                                 </P>
                                             </div>
-                                            <p class="small text-muted ml-auto mt-3 mb-0">3m</p>
+                                            <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                                <span class="bi h5 bi-x"></span>
+                                                3m</p>
                                         </div>
-                                        <hr class="mt-2 mb-0" style="opacity: 0.1;">
+                                        <hr class="mt-2 mb-0" style="opacity: 0.18;">
                                     </li>
                                     <li class="cursor-pointer bg-secondary mb-0">
-                                        <div class="d-flex pt-2 px-3 pb-0 mb-0">
+                                        <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
                                             <img src="./blog/images/course_img.png" alt="" class="avatar-imgg">
                                             <div class="mb-0">
                                                 <P class="ho ml-2 mb-0 text-muted "><span
                                                         class="font-weight-bold">Becca</span> posted a job update</P>
                                             </div>
-                                            <p class="small text-muted ml-auto mt-3 mb-0">1h</p>
+                                            <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                                <span class="bi h5 bi-x"></span>
+                                                1h</p>
                                         </div>
-                                        <hr class="mt-2 mb-0" style="opacity: 0.1;">
+                                        <hr class="mt-2 mb-0" style="opacity: 0.18;">
                                     </li>
                                     <li class="cursor-pointer mb-0">
-                                        <div class="d-flex pt-2 px-3 pb-0 mb-0">
+                                        <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
                                             <img src="./blog/images/course_img.png" alt="" class="avatar-imgg">
                                             <div class="mb-0">
                                                 <P class="ho ml-2 mb-0 text-muted "><span
                                                         class="font-weight-bold">Becca</span> sent you a friend request
                                                 </P>
                                             </div>
-                                            <p class="small text-muted ml-auto mt-3 mb-0">2s</p>
+                                            <p class="small text-muted ml-auto mb-0 mt-0">
+                                                <span class="bi h5 bi-x"></span>
+                                                2s</p>
                                         </div>
-                                        <hr class="mt-2 mb-0" style="opacity: 0.1;">
+                                        <hr class="mt-2 mb-0" style="opacity: 0.18;">
                                     </li>
                                     <li class="cursor-pointer mb-0">
-                                        <div class="d-flex pt-2 px-3 pb-0 mb-0">
+                                        <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
                                             <img src="./img/woman1.jpg" alt="" class="avatar-imgg">
                                             <div class="mb-0">
                                                 <P class="ho ml-2 mb-0 text-muted "><span
                                                         class="font-weight-bold">Roselyn</span> commented on your post
                                                 </P>
                                             </div>
-                                            <p class="small text-muted ml-auto mt-3 mb-0">3m</p>
+                                            <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                                <span class="bi h5 bi-x"></span>
+                                                3m</p>
                                         </div>
-                                        <hr class="mt-2 mb-0" style="opacity: 0.1;">
+                                        <hr class="mt-2 mb-0" style="opacity: 0.18;">
                                     </li>
                                     <li class="cursor-pointer mb-0">
-                                        <div class="d-flex pt-2 px-3 pb-0 mb-0">
+                                        <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
                                             <img src="./images/eda.jpg" alt="" class="avatar-imgg">
                                             <div class="mb-0">
                                                 <P class="ho ml-2 mb-0 text-muted "><span
                                                         class="font-weight-bold">Bonero</span> posted a job update</P>
                                             </div>
-                                            <p class="small text-muted ml-auto mt-3 mb-0">1h</p>
+                                            <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                                <span class="bi h5 bi-x"></span>
+                                                1h</p>
                                         </div>
-                                        <hr class="mt-2 mb-0" style="opacity: 0.1;">
+                                        <hr class="mt-2 mb-0" style="opacity: 0.18;">
                                     </li>
-                                    <li class="cursor-pointer bg-secondary pb-2">
-                                        <div class="d-flex pt-2 px-3">
+                                    <li class="cursor-pointer bg-secondary mb-0">
+                                        <div class="d-flex pt-2 pl-3 pr-1">
                                             <img src="./img/woman2.jpg" alt="" class="avatar-imgg">
                                             <div>
                                                 <P class="ho ml-2 text-muted "><span
-                                                        class="font-weight-bold">DianeR</span> liked your post</P>
+                                                        class="font-weight-bold">DianeR</span>
+                                                    liked your post</P>
                                             </div>
-                                            <p class="small text-muted ml-auto mt-3 mb-2">2h</p>
+                                            <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                                <span class="bi h5 bi-x"></span>
+                                                2h</p>
+                                        </div>
+                                        <hr class="mt-2 mb-0" style="opacity:0.18">
+                                    </li>
+                                    <li class="cursor-pointer bg-secondary mb-0">
+                                        <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                            <img src="./blog/images/course_img.png" alt="" class="avatar-imgg">
+                                            <div class="mb-0">
+                                                <P class="ho ml-2 mb-0 text-muted "><span
+                                                        class="font-weight-bold">Becca</span> wants to connect with you
+                                                </P>
+                                            </div>
+                                            <p class="small text-muted ml-auto mb-0 mt-0">
+                                                <span class="bi h5 bi-x"></span>
+                                                2s</p>
+                                        </div>
+                                        <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                    </li>
+                                    <li class="cursor-pointer mb-0">
+                                        <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                            <img src="./img/woman1.jpg" alt="" class="avatar-imgg">
+                                            <div class="mb-0">
+                                                <P class="ho ml-2 mb-0 text-muted "><span
+                                                        class="font-weight-bold">Roselyn</span> commented on your post
+                                                </P>
+                                            </div>
+                                            <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                                <span class="bi h5 bi-x"></span>
+                                                3m</p>
+                                        </div>
+                                        <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                    </li>
+                                    <li class="cursor-pointer bg-secondary mb-0">
+                                        <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                            <img src="./blog/images/course_img.png" alt="" class="avatar-imgg">
+                                            <div class="mb-0">
+                                                <P class="ho ml-2 mb-0 text-muted "><span
+                                                        class="font-weight-bold">Becca</span> posted a job update</P>
+                                            </div>
+                                            <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                                <span class="bi h5 bi-x"></span>
+                                                1h</p>
+                                        </div>
+                                        <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                    </li>
+                                    <li class="cursor-pointer mb-0">
+                                        <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                            <img src="./blog/images/course_img.png" alt="" class="avatar-imgg">
+                                            <div class="mb-0">
+                                                <P class="ho ml-2 mb-0 text-muted "><span
+                                                        class="font-weight-bold">Becca</span> sent you a friend request
+                                                </P>
+                                            </div>
+                                            <p class="small text-muted ml-auto mb-0 mt-0">
+                                                <span class="bi h5 bi-x"></span>
+                                                2s</p>
+                                        </div>
+                                        <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                    </li>
+                                    <li class="cursor-pointer mb-0">
+                                        <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                            <img src="./img/woman1.jpg" alt="" class="avatar-imgg">
+                                            <div class="mb-0">
+                                                <P class="ho ml-2 mb-0 text-muted "><span
+                                                        class="font-weight-bold">Roselyn</span> commented on your post
+                                                </P>
+                                            </div>
+                                            <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                                <span class="bi h5 bi-x"></span>
+                                                3m</p>
+                                        </div>
+                                        <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                    </li>
+                                    <li class="cursor-pointer mb-0">
+                                        <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                            <img src="./images/eda.jpg" alt="" class="avatar-imgg">
+                                            <div class="mb-0">
+                                                <P class="ho ml-2 mb-0 text-muted "><span
+                                                        class="font-weight-bold">Bonero</span> posted a job update</P>
+                                            </div>
+                                            <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                                <span class="bi h5 bi-x"></span>
+                                                1h</p>
+                                        </div>
+                                        <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                    </li>
+                                    <li class="cursor-pointer bg-secondary mb-0">
+                                        <div class="d-flex pt-2 pl-3 pr-1">
+                                            <img src="./img/woman2.jpg" alt="" class="avatar-imgg">
+                                            <div>
+                                                <P class="ho ml-2 text-muted "><span
+                                                        class="font-weight-bold">DianeR</span>
+                                                    liked your post</P>
+                                            </div>
+                                            <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                                <span class="bi h5 bi-x"></span>
+                                                2h</p>
+                                        </div>
+                                        <hr class="mt-2 mb-0" style="opacity:0.18">
+                                    </li>
+                                    <li class="cursor-pointer bg-secondary mb-0">
+                                        <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                            <img src="./blog/images/course_img.png" alt="" class="avatar-imgg">
+                                            <div class="mb-0">
+                                                <P class="ho ml-2 mb-0 text-muted "><span
+                                                        class="font-weight-bold">Becca</span> wants to connect with you
+                                                </P>
+                                            </div>
+                                            <p class="small text-muted ml-auto mb-0 mt-0">
+                                                <span class="bi h5 bi-x"></span>
+                                                2s</p>
+                                        </div>
+                                        <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                    </li>
+                                    <li class="cursor-pointer mb-0">
+                                        <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                            <img src="./img/woman1.jpg" alt="" class="avatar-imgg">
+                                            <div class="mb-0">
+                                                <P class="ho ml-2 mb-0 text-muted "><span
+                                                        class="font-weight-bold">Roselyn</span> commented on your post
+                                                </P>
+                                            </div>
+                                            <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                                <span class="bi h5 bi-x"></span>
+                                                3m</p>
+                                        </div>
+                                        <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                    </li>
+                                    <li class="cursor-pointer bg-secondary mb-0">
+                                        <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                            <img src="./blog/images/course_img.png" alt="" class="avatar-imgg">
+                                            <div class="mb-0">
+                                                <P class="ho ml-2 mb-0 text-muted "><span
+                                                        class="font-weight-bold">Becca</span> posted a job update</P>
+                                            </div>
+                                            <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                                <span class="bi h5 bi-x"></span>
+                                                1h</p>
+                                        </div>
+                                        <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                    </li>
+                                    <li class="cursor-pointer mb-0">
+                                        <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                            <img src="./blog/images/course_img.png" alt="" class="avatar-imgg">
+                                            <div class="mb-0">
+                                                <P class="ho ml-2 mb-0 text-muted "><span
+                                                        class="font-weight-bold">Becca</span> sent you a friend request
+                                                </P>
+                                            </div>
+                                            <p class="small text-muted ml-auto mb-0 mt-0">
+                                                <span class="bi h5 bi-x"></span>
+                                                2s</p>
+                                        </div>
+                                        <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                    </li>
+                                    <li class="cursor-pointer mb-0">
+                                        <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                            <img src="./img/woman1.jpg" alt="" class="avatar-imgg">
+                                            <div class="mb-0">
+                                                <P class="ho ml-2 mb-0 text-muted "><span
+                                                        class="font-weight-bold">Roselyn</span> commented on your post
+                                                </P>
+                                            </div>
+                                            <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                                <span class="bi h5 bi-x"></span>
+                                                3m</p>
+                                        </div>
+                                        <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                    </li>
+                                    <li class="cursor-pointer mb-0">
+                                        <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                            <img src="./images/eda.jpg" alt="" class="avatar-imgg">
+                                            <div class="mb-0">
+                                                <P class="ho ml-2 mb-0 text-muted "><span
+                                                        class="font-weight-bold">Bonero</span> posted a job update</P>
+                                            </div>
+                                            <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                                <span class="bi h5 bi-x"></span>
+                                                1h</p>
+                                        </div>
+                                        <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                    </li>
+                                    <li class="cursor-pointer bg-secondary pb-2">
+                                        <div class="d-flex pt-2 pl-3 pr-1">
+                                            <img src="./img/woman2.jpg" alt="" class="avatar-imgg">
+                                            <div>
+                                                <P class="ho ml-2 text-muted "><span
+                                                        class="font-weight-bold">DianeR</span>
+                                                    liked your post</P>
+                                            </div>
+                                            <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                                <span class="bi h5 bi-x"></span>
+                                                2h</p>
                                         </div>
                                     </li>
                                 </ul>
@@ -278,8 +507,7 @@
 
         <section class="ts-intro-outcome" style="padding:120px 0 20px 0">
             <div class="container-fluid px-md-5 community">
-                <div class="row mx-md-2 mb-5">
-
+                <div class="row mx-md-2">
                     <div class="col-lg-9">
                         <div class="row">
                             <div class="col-lg-4">
@@ -323,36 +551,108 @@
                                             </div>
                                             <div class="px-4 row">
                                                 <div class="col-12">
-                                                    <div class="mr-2 d-flex mb-0">
-                                                        <img src="blog/images/course_img.png" class="mt-1 avatar-img" />
-                                                        <div class="ml-2 mt-2">
-                                                            <p class="mb-0 ho font-weight-bold text-left">Bree Killgarah
-                                                            </p>
-                                                            <p class="small mt-1 text-left py-0"
-                                                                style="line-height: normal;">Data Analyst at Aveep Co.
-                                                                <br>4 mutual connections</p>
+                                                    <div class="popout">
+                                                        <a href="person-unknown.html">
+                                                            <div class="mr-2 d-flex mb-0">
+                                                                <img src="blog/images/course_img.png"
+                                                                    class="mt-1 avatar-img" />
+                                                                <div class="ml-2 mt-2">
+                                                                    <p class="mb-0 ho font-weight-bold text-left">Bree
+                                                                        Killgarah
+                                                                    </p>
+                                                                    <p class="small mt-1 text-left py-0"
+                                                                        style="line-height: normal;">Data Analyst at
+                                                                        Aveep
+                                                                        Co.
+                                                                        <br>4 mutual connections</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <div class="pop d-none">
+                                                            <div class="card p-0">
+                                                                <div
+                                                                    class="card-body text-center rounded-lg pt-3 pb-0 px-3">
+                                                                    <p class="font-12 text-muted"
+                                                                        style="line-height: normal !important;">Talks
+                                                                        about #coaching,
+                                                                        #womenempowerment, #talentdevelopment,
+                                                                        #diversityandinclusion, and
+                                                                        #leadershipdevelopment</p>
+                                                                </div>
+                                                                <div class="card-footer m-0 d-block">
+                                                                    <button
+                                                                        class="btn btn-alpher connect-btn mt-1 d-block py-1 mx-auto">Connect</button>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <hr class="mt-0" style="opacity: 0.1;">
-                                                    <div class="mr-2 d-flex mb-0">
-                                                        <img src="./img/woman2.jpg" class="mt-1 avatar-img" />
-                                                        <div class="ml-2 mt-2">
-                                                            <p class="mb-0 ho font-weight-bold text-left">Jessica
-                                                                Versteeg</p>
-                                                            <p class="small mt-1 text-left py-0"
-                                                                style="line-height: normal;">CEO, Women Inc. <br>27
-                                                                mutual connections</p>
+                                                    <div class="popout">
+                                                        <a href="person-unknown.html">
+                                                            <div class="mr-2 d-flex mb-0">
+                                                                <img src="./img/woman2.jpg" class="mt-1 avatar-img" />
+                                                                <div class="ml-2 mt-2">
+                                                                    <p class="mb-0 ho font-weight-bold text-left">
+                                                                        Jessica
+                                                                        Versteeg</p>
+                                                                    <p class="small mt-1 text-left py-0"
+                                                                        style="line-height: normal;">CEO, Women Inc.
+                                                                        <br>27
+                                                                        mutual connections</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <div class="pop d-none">
+                                                            <div class="card p-0">
+                                                                <div
+                                                                    class="card-body text-center rounded-lg pt-3 pb-0 px-3">
+                                                                    <p class="font-12 text-muted"
+                                                                        style="line-height: normal !important;">Talks
+                                                                        about #coaching,
+                                                                        #womenempowerment, #talentdevelopment,
+                                                                        #diversityandinclusion, and
+                                                                        #leadershipdevelopment</p>
+                                                                </div>
+                                                                <div class="card-footer m-0 d-block">
+                                                                    <button
+                                                                        class="btn btn-alpher connect-btn mt-1 d-block py-1 mx-auto">Connect</button>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <hr class="mt-0" style="opacity: 0.1;">
-                                                    <div class="mr-2 d-flex">
-                                                        <img src="images/avatar/author.jpg" class="mt-1 avatar-img" />
-                                                        <div class="ml-2 mt-2">
-                                                            <p class="mb-0 ho font-weight-bold text-left">Osuno Gohrn
-                                                            </p>
-                                                            <p class="small mt-1 text-left py-0"
-                                                                style="line-height: normal;">Digital Marketer <br>90
-                                                                mutual connections</p>
+                                                    <div class="popout">
+                                                        <a href="person-unknown.html">
+                                                            <div class="mr-2 d-flex">
+                                                                <img src="images/avatar/author.jpg"
+                                                                    class="mt-1 avatar-img" />
+                                                                <div class="ml-2 mt-2">
+                                                                    <p class="mb-0 ho font-weight-bold text-left">Osuno
+                                                                        Gohrn
+                                                                    </p>
+                                                                    <p class="small mt-1 text-left py-0"
+                                                                        style="line-height: normal;">Digital Marketer
+                                                                        <br>90
+                                                                        mutual connections</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <div class="pop d-none">
+                                                            <div class="card p-0">
+                                                                <div
+                                                                    class="card-body text-center rounded-lg pt-3 pb-0 px-3">
+                                                                    <p class="font-12 text-muted"
+                                                                        style="line-height: normal !important;">Talks
+                                                                        about #coaching,
+                                                                        #womenempowerment, #talentdevelopment,
+                                                                        #diversityandinclusion, and
+                                                                        #leadershipdevelopment</p>
+                                                                </div>
+                                                                <div class="card-footer m-0 d-block">
+                                                                    <button
+                                                                        class="btn btn-alpher connect-btn mt-1 d-block py-1 mx-auto">Connect</button>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -382,16 +682,17 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-md-3 col-2 pt-1 cursor fileinput-button" data-toggle="modal"
-                                            data-target="#albums-modal">
+                                        <div class="col-md-3 col-2 pt-1 cursor fileinput-button d-flex">
                                             <p class="font-14 font-weight-500 d-flex align-items-center"><i
                                                     class="fa fa-image text-green font-20 ml-3 mr-2"></i> Photo </p>
+                                            <p class="font-14 font-weight-500 d-flex align-items-center"><i
+                                                    class="fa fa-video text-green font-20 ml-3 mr-2"></i> Video </p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="card-content px-0"
-                                    style="max-height: 60vh;overflow: scroll;margin-top: 20px;">
+                                <div class="card-content px-2"
+                                    style="max-height: 100vh;overflow-y: scroll;overflow-x:hidden;margin-top: 20px;">
                                     <div class="card--dashboard" data-post-id="1">
 
                                         <div class="row">
@@ -399,12 +700,12 @@
                                                 <div class="px-4 row">
                                                     <div class="col-12 d-flex">
                                                         <div class="mr-2">
-                                                            <img src="blog/images/course_img.png"
+                                                            <img src="./blog/images/course_img.png"
                                                                 class="mt-1 avatar-img" />
                                                         </div>
                                                         <div class="d-flex justify-content-between w-100">
                                                             <div>
-                                                                <p class="font-weight-bold mb-0 font-14 pop cursor"
+                                                                <p class="font-weight-bold mb-0 font-14 cursor"
                                                                     data-user='1'>Brandee Sanders</p>
                                                                 <p class="font-weight-light font-14">Data Analyst at
                                                                     Lidl</p>
@@ -461,15 +762,13 @@
                                                                 class="text-comments"></span></span>
                                                     </div>
                                                 </div>
-
                                                 <hr>
-
                                                 <div class="like-share row my-0 px-5">
                                                     <div class="text-left mr-4 ">
                                                         <a class="like font-weight-500 d-flex align-items-center"
                                                             href="#" data-user='1' data-post='1' data-id="1">
                                                             <span class="icon" id="icon-1"><i
-                                                                    class="far fa-thumbs-up font-20 mr-1"></i></span>
+                                                                    class="fa fa-thumbs-up font-20 mr-1"></i></span>
                                                             <span class="like-unlike font-14"
                                                                 id="like-unlike-1">Like</span>
                                                         </a>
@@ -477,7 +776,7 @@
                                                     <div class="text-left mr-4 d-flex align-items-center">
                                                         <a class="show-comments font-weight-500 d-flex align-items-center"
                                                             href="#" data-user='1' data-post='1' data-id="1">
-                                                            <span><i class="fa fa-comment-dots font-20 mr-1"></i></span>
+                                                            <span><i class="fa fa-comment-o font-20 mr-1"></i></span>
                                                             <span class="font-14" id="cmt-1">Comment</span>
                                                         </a>
                                                     </div>
@@ -489,52 +788,45 @@
                                                         </a>
                                                     </div>
                                                 </div>
-
                                                 <div class="comments"></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
-                                <!-- <div class="w-100 text-center mt-4">
-                                    <a href="#" class="btn btn-green-outline btn-round font-14 w-50 loadPost">See More Posts </a>
-                                </div> -->
                             </div>
 
-                            <div class="bg-white my-3 col-lg-12 px-0">
-                                <div class="d-block d-lg-flex align-items-center justify-content-end">
-                                    <div class="px-4 font-weight-bold text-center col p-3">Tailored just for you</div>
-                                    <a href="#" class="card p-2 px-4 bg-primary mb-0 rounded-0">
-                                        <div class="font-weight-bold font-14 text-white">50% off Sunu HMO</div>
-                                        <span class="text-white">Discount</span>
-                                    </a href="#">
-                                    <a href="#" class="card p-2 px-4 bg-success mb-0 rounded-0">
-                                        <div class="font-weight-bold font-14 text-white">How to develop your business
-                                        </div>
-                                        <span class="text-white">Course</span>
-                                    </a href="#">
-                                    <a href="#" class="card p-2 px-4 bg-danger mb-0 rounded-0">
-                                        <div class="font-weight-bold font-14 text-white">Five ways to de-stress</div>
-                                        <span class="text-white">Health & Wellness</span>
-                                    </a href="#">
-                                </div>
-
-                            </div>
                         </div>
                     </div>
 
                     <div class="col-md-3 p-0">
-                        <div class="pb-3">
-                            <a href="#">
-                                <img src="../../i.ytimg.com/vi/wIGN5-0Bc3E/maxresdefault.jpg">
-                            </a>
+                        <div class="slideshow-container pb-3">
+
+                            <div class="mySlides sliderFade">
+                                <img src="./blog/images/maxresdefault.jpg" class="sliderImg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides sliderFade">
+                                <img src="./blog/images/Business-Day-online.jpg" class="sliderImg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides sliderFade">
+                                <img src="./blog/images/Bioviva-Spa-1.jpg" class="sliderImg" style="width:100%">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
                         </div>
                         <div>
-                            <div class="bg-white">
+                            <div class="bg-white mb-3">
                                 <h4 class="font-weight-500 p-4 px-1 bg-dark text-alpher mb-0">
                                     Upcoming Events
                                 </h4>
-                                <div class="col-sm-12 text-center mx-auto pt-0 p-0">
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="col-sm-12 text-center mx-auto pt-0 p-0">
                                     <div class="card border-0">
                                         <div class="row no-gutters align-items-center">
                                             <div class="col-md-12 px-4 py-2">
@@ -554,12 +846,96 @@
                                         </div>
                                     </div>
                                 </div>
+    </div>
+    <div class="carousel-item">
+      <div class="col-sm-12 text-center mx-auto pt-0 p-0">
+                                    <div class="card border-0">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col-md-12 px-4 py-2">
+                                                <div class="card-body text-left p-0">
+                                                    <a href="event-detail.html">
+                                                        <h5 class="card-title font-20">01.09.2020</h5>
+                                                    </a>
+                                                    <div class="card-text mb-2">
+                                                        <span class="text-muted font-14">DIY - How to build a secure
+                                                            website</span>
+                                                    </div>
+                                                    <a href="event-detail.html"
+                                                        class="btn-link text-uppercase font-14 text-alpher">Get Info <i
+                                                            class="icon icon-arrow-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    </div>
+    <div class="carousel-item">
+      <div class="col-sm-12 text-center mx-auto pt-0 p-0">
+                                    <div class="card border-0">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col-md-12 px-4 py-2">
+                                                <div class="card-body text-left p-0">
+                                                    <a href="event-detail.html">
+                                                        <h5 class="card-title font-20">01.09.2020</h5>
+                                                    </a>
+                                                    <div class="card-text mb-2">
+                                                        <span class="text-muted font-14">DIY - How to build a secure
+                                                            website</span>
+                                                    </div>
+                                                    <a href="event-detail.html"
+                                                        class="btn-link text-uppercase font-14 text-alpher">Get Info <i
+                                                            class="icon icon-arrow-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+                                <!-- <div class="col-sm-12 text-center mx-auto pt-0 p-0">
+                                    <div class="card border-0">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col-md-12 px-4 py-2">
+                                                <div class="card-body text-left p-0">
+                                                    <a href="event-detail.html">
+                                                        <h5 class="card-title font-20">01.09.2020</h5>
+                                                    </a>
+                                                    <div class="card-text mb-2">
+                                                        <span class="text-muted font-14">DIY - How to build a secure
+                                                            website</span>
+                                                    </div>
+                                                    <a href="event-detail.html"
+                                                        class="btn-link text-uppercase font-14 text-alpher">Get Info <i
+                                                            class="icon icon-arrow-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
                             </div>
                         </div>
                         <div>
                             <div class="bg-white">
                                 <h4 class="font-weight-500 p-3 px-4 mb-0">
-                                    Remote Opportunities
+                                    Job Opportunities
                                 </h4>
                                 <div class="col-sm-12 text-center mx-auto pt-0 p-0">
                                     <div class="card border-0">
@@ -603,6 +979,35 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-3 col-lg-9 px-0 row mx-md-2">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="px-4 font-weight-bold text-center p-3">Tailored just for you</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 pl-0">
+                        <div class="d-lg-flex mx-auto rounded-lg">
+                            <a href="https://alpherwoman.com/discounted/the-oriki-spa"
+                                class="card p-2 px-4 bg-primary mb-0 rounded-0">
+                                <div class="font-weight-bold pb-0 mb-0 font-12 text-white" style="line-height: normal;">
+                                    20% off The Oriki Spa</div>
+                                <span class="text-white pb-0 mb-0">Discount</span>
+                            </a>
+                            <a href="https://alpherwoman.com/course/show/smart-ways-to-invest-your-summer-holiday-money"
+                                class="card p-2 px-4 bg-success mb-0 rounded-0">
+                                <div class="font-weight-bold pb-0 mb-0 font-12 text-white" style="line-height: normal;">
+                                    Financing Your Business with Alpher
+                                </div>
+                                <span class="text-white pb-0 mb-0">Course</span>
+                            </a>
+                            <a href="https://alpherwoman.com/article/anti-flu-immune-system-boosters"
+                                class="card p-2 px-4 bg-danger mb-0 rounded-0" style="line-height: normal;">
+                                <div class="font-weight-bold font-12 text-white">Anti-flu Immune System Boosters</div>
+                                <span class="text-white pb-0 mb-0">Health & Wellness</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1208,7 +1613,7 @@
 
                         <form id="create-media" method="POST">
                             <div class="">
-                                <div class="card-body" style="">
+                                <div class="card-body">
                                     <div class="right-seciont w-100 has-slimscroll">
 
                                         <div class="modal-uploader" style="height: 250px">
@@ -1297,10 +1702,12 @@
 
                     </div>
                     <div class="modal-footer">
-                        <div class="mr-auto">
+                        <div class="mr-auto d-flex">
                             <img src="blog/img/pic.svg"
                                 class="img-fluid cursor display_image_upload fileinput-button" />
-                            <!-- <img src="blog/img/video.svg" class="mb-1 mx-4 img-fluid cursor display_image_upload fileinput-button" /> -->
+                            <p class=" fileinput-button cursor font-14 font-weight-500 d-flex align-items-center"><i
+                                    class="fa fa-video text-grey font-20 ml-3 mr-2 mt-3"></i></p>
+
                         </div>
                         <!-- <button type="button" class="btn btn-alpher px-4 py-2" id="d-sub">Post</button> -->
                         <button type="submit" id="d-sub" class="button is-solid accent-button close-modal">Post</button>
@@ -1455,6 +1862,23 @@
 
         <!-- Javascript Files
             ================================================== -->
+        <script>
+            function connect() {
+                var connectBtn = document.querySelectorAll(".connect-btn")
+                for (let index = 0; index < connectBtn.length; index++) {
+                    const connectbutton = connectBtn[index];
+
+                    connectbutton.addEventListener("click", function () {
+                        this.classList.add("bg-success")
+                        this.textContent = "Request Sent"
+                        this.style.color = "white"
+                    })
+                }
+
+            }
+
+            connect()
+        </script>
         <!-- initialize jQuery Library -->
         <script src="js/jquery.js"></script>
 
@@ -1496,8 +1920,6 @@
         <script src="../../cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 
         <script src="blog/js/emojionearea.js"></script>
-
-
         <script>
             $(".js-modal-btn").modalVideo();
             $(".js-video-button").modalVideo({
@@ -1611,13 +2033,43 @@
                 });
                 // $(".searchbox").toggleClass("search-show");
             });
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
         </script>
 
     </div>
     <!-- Body inner end -->
 </body>
-
-
-<!-- Mirrored from alpherwoman.github.io/new/community.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Aug 2021 12:33:55 GMT -->
 
 </html>

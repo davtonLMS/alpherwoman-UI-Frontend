@@ -25,7 +25,7 @@ if ($('.modal-uploader').length) {
         thumbnailHeight: 600,
         parallelUploads: 20,
         previewTemplate: previewTemplate,
-        acceptedFiles: "image/jpeg,image/png,image/gif",
+        acceptedFiles: "image/jpeg,image/png,image/gif,video/mp4,video/mkv,video/avi",
         autoProcessQueue: true,
         autoQueue: true, // Make sure the files aren't queued until manually added
         previewsContainer: "#previews", // Define the container to display the previews
@@ -33,7 +33,7 @@ if ($('.modal-uploader').length) {
     });
 
     // Global User Info from Database
-    let img = 'images/course_img.png' // Will be a global value
+    let img = './blog/images/course_img.png' // Will be a global value
     let name = 'James Smart'; // Will be a global value
     let job = 'Data Analyst at Lidl';
 
@@ -112,11 +112,11 @@ if ($('.modal-uploader').length) {
                         <div class="px-4 row">
                             <div class="col-12 d-flex">
                                 <div class="mr-2">
-                                    <img src="`+img+` class="mt-1">
+                                    <img src="`+img+`" class="mt-1 avatar-img">
                                 </div>
                                 <div class="d-flex justify-content-between w-100">
                                     <div>
-                                        <p class="font-weight-bold mb-0 font-14 pop" data-user='1'>`+name+`</p>
+                                        <p class="font-weight-bold mb-0 font-14" data-user='1'>`+name+`</p>
                                         <p class="font-weight-light font-14">`+job+`</p>
                                     </div>
                                     <div>
@@ -146,13 +146,13 @@ if ($('.modal-uploader').length) {
                         <div class="like-share row my-0 px-5">
                             <div class="text-left mr-4 ">
                                 <a class="like font-weight-500 d-flex align-items-center" href="#">
-                                    <span class="icon" id="icon-1"><i class="far fa-thumbs-up font-20 mr-1"></i></span>
+                                    <span class="icon" id="icon-1"><i class="fa fa-thumbs-up font-20 mr-1"></i></span>
                                     <span class="like-unlike font-14" id="like-unlike-1">Like</span>
                                 </a>
                             </div>
                             <div class="text-left mr-4 d-flex align-items-center">
                                 <a class="show-comments font-weight-500 d-flex align-items-center" href="#">
-                                    <span><i class="fa fa-comment-dots font-20 mr-1"></i></span>
+                                    <span><i class="fa fa-comment-o font-20 mr-1"></i></span>
                                     <span class="font-14" id="cmt-1">Comment</span>
                                 </a>
                             </div>

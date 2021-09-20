@@ -1236,18 +1236,6 @@ function getMorePost(){
                                 <hr>
 
                                 <div class="like-share row my-0 px-5">
-                                    <div class="text-left mr-4 ">
-                                        <a class="like font-weight-500 d-flex align-items-center" href="#" data-user="1" data-post="1" data-id="1">
-                                            <span class="icon" id="icon-1"><i class="fa fa-thumbs-up font-20 mr-1"></i></span>
-                                            <span class="like-unlike font-14" id="like-unlike-1">Like</span>
-                                        </a>
-                                    </div>
-                                    <div class="text-left mr-4 d-flex align-items-center">
-                                        <a class="show-comments font-weight-500 d-flex align-items-center" href="#" data-user="1" data-post="1" data-id="1">
-                                            <span><i class="fa fa-comment-o font-20 mr-1"></i></span>
-                                            <span class="font-14" id="cmt-1">Comment</span>
-                                        </a>
-                                    </div>
                                     <div class="share text-left mr-4 d-flex align-items-center">
                                         <a class="share_link font-weight-500 d-flex align-items-center cursor" data-post="1" data-user="1" data-id="1">
                                             <span><i class="font-20 mr-1 fa fa-share"></i></span>
@@ -1256,8 +1244,14 @@ function getMorePost(){
                                     </div>
                                     <div class="share text-left mr-4 d-flex align-items-center">
                                         <a class="font-weight-500 d-flex align-items-center cursor" data-post="1" data-user="1" data-id="1">
-                                            <span><i class="font-20 mr-1 fa fa-paper-plane"></i></span>
-                                            <span class="font-14">Send</span>
+                                            <span><i class="font-20 mr-1 fa fa-flag"></i></span>
+                                            <span class="font-14">Flag</span>
+                                        </a>
+                                    </div>
+                                    <div class="share text-left mr-4 d-flex align-items-center">
+                                        <a class="font-weight-500 d-flex align-items-center cursor" data-post="1" data-user="1" data-id="1">
+                                            <span><i class="font-20 mr-1 fa fa-trash"></i></span>
+                                            <span class="font-14">Delete</span>
                                         </a>
                                     </div>
                                 </div>

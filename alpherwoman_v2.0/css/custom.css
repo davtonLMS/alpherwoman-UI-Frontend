@@ -1244,3 +1244,11 @@ a.a-link:hover{
     width: 80vw!important;
   }
 }
+
+.carousel-control-next,
+.carousel-control-prev
+
+/*, .carousel-indicators */
+  {
+  filter: invert(100%);
+}

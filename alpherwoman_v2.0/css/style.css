@@ -578,7 +578,7 @@ img.pull-right {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
     padding: 0; }
 
-.dropdown-menu.show {
+  .header ul.navbar-nav li .dropdown-menu.show {
   display: none; }
 
 @media (min-width: 991px) {
@@ -3232,3 +3232,39 @@ faq-item
     margin-top: 2px; }
 
 /*# sourceMappingURL=style.css.map */
+
+.filterBtn{
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.filterOpt{
+  position: absolute;
+  background-color: white;
+  z-index: 9999999999999;
+  width: 350px;
+}
+
+.filterOpt input[type="checkbox"]{
+  width: 23px;
+  height: 23px;
+}
+
+.filterOpt label{
+  font-size: 1.01rem;
+}
+
+.popout{
+  position: relative;
+}
+
+.pop{
+  position: absolute;
+  top: 0;
+  left: 200px;
+  z-index: 3000000000;
+  width: 280px;
+  max-height: 70px;
+}

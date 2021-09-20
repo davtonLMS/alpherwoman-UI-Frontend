@@ -74,14 +74,14 @@
             max-width: 1400px;
         }
 
-        .btn {
+        .connect-btn,
+        .message-btn {
             font-size: 14px !important;
             font-weight: normal !important;
             text-transform: capitalize !important;
-            height: 40px;
-            background: #fff;
-            color: #009fe3;
-            padding: 0;
+            background: #009fe3;
+            height: 30px;
+            padding: 0 35px;
             line-height: normal;
             border-radius: 50px !important;
             -webkit-border-radius: 3px;
@@ -96,10 +96,7 @@
             cursor: pointer;
         }
 
-        .connect-btn {
-            background: #009fe3;
-            color: #fff !important;
-        }
+        
 
         .card.p-3:hover {
             box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
@@ -109,148 +106,392 @@
 </head>
 
 <body>
-    <div class="body-inner bg-gray">
+    <div class="body-inner" style="background-image: url(./blog/images/bg.png);"">
 
         <!-- Header start -->
-        <header id="header" class="header header-transparent nav-border" style="z-index: 9">
-            <div class="container-fluid px-4">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <!-- logo-->
-                    <a class="navbar-brand d-lg-none" href="index.html">
-                        <img src="images/logo.png" alt="edu360-logo" style="width: 120px">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"><i class="icon icon-menu"></i></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item mr-2 d-none d-md-flex">
-                                <a class="" href="index.html">
-                                    <img src="images/logo.png" alt="edu360-logo" style="width: 120px">
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="about.html">Why <span
-                                        style="text-transform: lowercase;font-size: 18px;line-height: 20px">&alpha;</span>lpher
-                                    ?</a>
-                            </li>
-                            <li class="dropdown nav-item active">
-                                <a href="#" class="" data-toggle="dropdown">Grow My Business </a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="loans.html">Need a loan?</a></li>
-                                    <li><a href="opportunities.html">Opportunities</a></li>
-                                    <li><a href="#" data-toggle="modal" data-target="#promoteModal">Promote your
-                                            business</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown nav-item">
-                                <a href="#" class="" data-toggle="dropdown">Build My Wealth </a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="savings.html">Savings</a></li>
-                                    <li><a href="investment.html">Investment</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="" data-toggle="dropdown">Develop Myself </a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="courses.html">Courses</a></li>
-                                    <li><a href="mentorship.html">Mentorship</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
-                                </ul>
+        <header id=" header" class="header header-transparent nav-border" style="z-index: 9">
+        <div class="container-fluid px-4">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <!-- logo-->
+                <a class="navbar-brand d-lg-none" href="index.html">
+                    <img src="images/logo.png" alt="edu360-logo" style="width: 120px">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="icon icon-menu"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mr-2 d-none d-md-flex">
+                            <a class="" href="index.html">
+                                <img src="images/logo.png" alt="edu360-logo" style="width: 120px">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html">Why <span
+                                    style="text-transform: lowercase;font-size: 18px;line-height: 20px">&alpha;</span>lpher
+                                ?</a>
+                        </li>
+                        <li class="dropdown nav-item active">
+                            <a href="#" class="" data-toggle="dropdown">Grow My Business </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="loans.html">Need a loan?</a></li>
+                                <li><a href="opportunities.html">Opportunities</a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#promoteModal">Promote your
+                                        business</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="#" class="" data-toggle="dropdown">Build My Wealth </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="savings.html">Savings</a></li>
+                                <li><a href="investment.html">Investment</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="" data-toggle="dropdown">Develop Myself </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="courses.html">Courses</a></li>
+                                <li><a href="mentorship.html">Mentorship</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                            </ul>
 
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="" data-toggle="dropdown">Expand My Network </a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="events.html">Events</a></li>
-                                    <li><a href="community.html">Community</a></li>
-                                    <li><a href="gallery.html">Gallery</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#"> Live My Dream </a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="healthcare.html">Discounted Healhcare Plans</a></li>
-                                    <li><a href="discounts.html">Lifestyle Discounts</a></li>
-                                    <li><a href="directory.html">Business Directory</a></li>
-                                </ul>
-                            </li>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="" data-toggle="dropdown">Expand My Network </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="events.html">Events</a></li>
+                                <li><a href="community.html">Community</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#"> Live My Dream </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="healthcare.html">Discounted Healhcare Plans</a></li>
+                                <li><a href="discounts.html">Lifestyle Discounts</a></li>
+                                <li><a href="directory.html">Business Directory</a></li>
+                            </ul>
+                        </li>
 
-                            <li class="nav-item dropdown d-flex position-relative mt-1 align-self-center">
-                                <a class="nav-link text-white" href="#">
-                                    <span class="ml-2">
-                                        <i class="fa fa-bell fa-2x"></i>
-                                    </span>
-                                    <span class="notify"></span>
-                                </a>
-                                <ul class="dropdown-menu bg-white" role="menu">
-                                    <li class="ho bg-secondary mb-0">
-                                        <div class="d-flex pt-2 px-3 pb-0 mb-0">
-                                            <img src="./blog/images/course_img.png" alt="" class="avatar-imgg">
-                                            <div class="mb-0">
-                                                <P class="ho ml-2 mb-0 text-muted "><span
-                                                        class="font-weight-bold">Becca</span> sent you a friend request
-                                                </P>
-                                            </div>
-                                            <p class="small text-muted ml-auto mt-3 mb-0">2s</p>
+                        <li class="nav-item dropdown d-flex position-relative mt-1 align-self-center">
+                            <a class="nav-link text-white" href="#">
+                                <span class="ml-2">
+                                    <i class="fa fa-bell fa-2x"></i>
+                                </span>
+                                <span class="notify"></span>
+                            </a>
+                            <ul class="dropdown-menu bg-white" role="menu" id="notification">
+                                <li class="position-fixed">
+                                    <a href="notifications.html" class="text-alpher text-center bg-white"
+                                        style="text-decoration: underline;">See all notifications</a>
+                                </li>
+                                <li style="margin-top: 47px;"></li>
+                                <li class="cursor-pointer bg-secondary mb-0">
+                                    <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                        <img src="./blog/images/course_img.png" alt="" class="avatar-imgg">
+                                        <div class="mb-0">
+                                            <P class="ho ml-2 mb-0 text-muted "><span
+                                                    class="font-weight-bold">Becca</span> wants to connect with you
+                                            </P>
                                         </div>
-                                        <hr class="mt-2 mb-0" style="opacity: 0.1;">
-                                    </li>
-                                    <li class="ho mb-0">
-                                        <div class="d-flex pt-2 px-3 pb-0 mb-0">
-                                            <img src="./img/woman1.jpg" alt="" class="avatar-imgg">
-                                            <div class="mb-0">
-                                                <P class="ho ml-2 mb-0 text-muted "><span
-                                                        class="font-weight-bold">Roselyn</span> commented on your post
-                                                </P>
-                                            </div>
-                                            <p class="small text-muted ml-auto mt-3 mb-0">3m</p>
+                                        <p class="small text-muted ml-auto mb-0 mt-0">
+                                            <span class="bi h5 bi-x"></span>
+                                            2s</p>
+                                    </div>
+                                    <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                </li>
+                                <li class="cursor-pointer mb-0">
+                                    <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                        <img src="./img/woman1.jpg" alt="" class="avatar-imgg">
+                                        <div class="mb-0">
+                                            <P class="ho ml-2 mb-0 text-muted "><span
+                                                    class="font-weight-bold">Roselyn</span> commented on your post
+                                            </P>
                                         </div>
-                                        <hr class="mt-2 mb-0" style="opacity: 0.1;">
-                                    </li>
-                                    <li class="ho bg-secondary mb-0">
-                                        <div class="d-flex pt-2 px-3 pb-0 mb-0">
-                                            <img src="./blog/images/course_img.png" alt="" class="avatar-imgg">
-                                            <div class="mb-0">
-                                                <P class="ho ml-2 mb-0 text-muted "><span
-                                                        class="font-weight-bold">Becca</span> posted a job update</P>
-                                            </div>
-                                            <p class="small text-muted ml-auto mt-3 mb-0">1h</p>
+                                        <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                            <span class="bi h5 bi-x"></span>
+                                            3m</p>
+                                    </div>
+                                    <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                </li>
+                                <li class="cursor-pointer bg-secondary mb-0">
+                                    <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                        <img src="./blog/images/course_img.png" alt="" class="avatar-imgg">
+                                        <div class="mb-0">
+                                            <P class="ho ml-2 mb-0 text-muted "><span
+                                                    class="font-weight-bold">Becca</span> posted a job update</P>
                                         </div>
-                                        <hr class="mt-2 mb-0" style="opacity: 0.1;">
-                                    </li>
-                                    <li class="ho bg-secondary">
-                                        <div class="d-flex pt-2 px-3">
-                                            <img src="./img/woman2.jpg" alt="" class="avatar-imgg">
-                                            <div>
-                                                <P class="ho ml-2 text-muted "><span
-                                                        class="font-weight-bold">DianeR</span> liked your post</P>
-                                            </div>
-                                            <p class="small text-muted ml-auto mt-3 mb-0">2h</p>
+                                        <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                            <span class="bi h5 bi-x"></span>
+                                            1h</p>
+                                    </div>
+                                    <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                </li>
+                                <li class="cursor-pointer mb-0">
+                                    <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                        <img src="./blog/images/course_img.png" alt="" class="avatar-imgg">
+                                        <div class="mb-0">
+                                            <P class="ho ml-2 mb-0 text-muted "><span
+                                                    class="font-weight-bold">Becca</span> sent you a friend request
+                                            </P>
                                         </div>
-                                    </li>
-                                </ul>
-                            </li>
+                                        <p class="small text-muted ml-auto mb-0 mt-0">
+                                            <span class="bi h5 bi-x"></span>
+                                            2s</p>
+                                    </div>
+                                    <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                </li>
+                                <li class="cursor-pointer mb-0">
+                                    <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                        <img src="./img/woman1.jpg" alt="" class="avatar-imgg">
+                                        <div class="mb-0">
+                                            <P class="ho ml-2 mb-0 text-muted "><span
+                                                    class="font-weight-bold">Roselyn</span> commented on your post
+                                            </P>
+                                        </div>
+                                        <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                            <span class="bi h5 bi-x"></span>
+                                            3m</p>
+                                    </div>
+                                    <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                </li>
+                                <li class="cursor-pointer mb-0">
+                                    <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                        <img src="./images/eda.jpg" alt="" class="avatar-imgg">
+                                        <div class="mb-0">
+                                            <P class="ho ml-2 mb-0 text-muted "><span
+                                                    class="font-weight-bold">Bonero</span> posted a job update</P>
+                                        </div>
+                                        <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                            <span class="bi h5 bi-x"></span>
+                                            1h</p>
+                                    </div>
+                                    <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                </li>
+                                <li class="cursor-pointer bg-secondary mb-0">
+                                    <div class="d-flex pt-2 pl-3 pr-1">
+                                        <img src="./img/woman2.jpg" alt="" class="avatar-imgg">
+                                        <div>
+                                            <P class="ho ml-2 text-muted "><span class="font-weight-bold">DianeR</span>
+                                                liked your post</P>
+                                        </div>
+                                        <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                            <span class="bi h5 bi-x"></span>
+                                            2h</p>
+                                    </div>
+                                    <hr class="mt-2 mb-0" style="opacity:0.18">
+                                </li>
+                                <li class="cursor-pointer bg-secondary mb-0">
+                                    <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                        <img src="./blog/images/course_img.png" alt="" class="avatar-imgg">
+                                        <div class="mb-0">
+                                            <P class="ho ml-2 mb-0 text-muted "><span
+                                                    class="font-weight-bold">Becca</span> wants to connect with you
+                                            </P>
+                                        </div>
+                                        <p class="small text-muted ml-auto mb-0 mt-0">
+                                            <span class="bi h5 bi-x"></span>
+                                            2s</p>
+                                    </div>
+                                    <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                </li>
+                                <li class="cursor-pointer mb-0">
+                                    <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                        <img src="./img/woman1.jpg" alt="" class="avatar-imgg">
+                                        <div class="mb-0">
+                                            <P class="ho ml-2 mb-0 text-muted "><span
+                                                    class="font-weight-bold">Roselyn</span> commented on your post
+                                            </P>
+                                        </div>
+                                        <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                            <span class="bi h5 bi-x"></span>
+                                            3m</p>
+                                    </div>
+                                    <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                </li>
+                                <li class="cursor-pointer bg-secondary mb-0">
+                                    <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                        <img src="./blog/images/course_img.png" alt="" class="avatar-imgg">
+                                        <div class="mb-0">
+                                            <P class="ho ml-2 mb-0 text-muted "><span
+                                                    class="font-weight-bold">Becca</span> posted a job update</P>
+                                        </div>
+                                        <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                            <span class="bi h5 bi-x"></span>
+                                            1h</p>
+                                    </div>
+                                    <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                </li>
+                                <li class="cursor-pointer mb-0">
+                                    <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                        <img src="./blog/images/course_img.png" alt="" class="avatar-imgg">
+                                        <div class="mb-0">
+                                            <P class="ho ml-2 mb-0 text-muted "><span
+                                                    class="font-weight-bold">Becca</span> sent you a friend request
+                                            </P>
+                                        </div>
+                                        <p class="small text-muted ml-auto mb-0 mt-0">
+                                            <span class="bi h5 bi-x"></span>
+                                            2s</p>
+                                    </div>
+                                    <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                </li>
+                                <li class="cursor-pointer mb-0">
+                                    <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                        <img src="./img/woman1.jpg" alt="" class="avatar-imgg">
+                                        <div class="mb-0">
+                                            <P class="ho ml-2 mb-0 text-muted "><span
+                                                    class="font-weight-bold">Roselyn</span> commented on your post
+                                            </P>
+                                        </div>
+                                        <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                            <span class="bi h5 bi-x"></span>
+                                            3m</p>
+                                    </div>
+                                    <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                </li>
+                                <li class="cursor-pointer mb-0">
+                                    <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                        <img src="./images/eda.jpg" alt="" class="avatar-imgg">
+                                        <div class="mb-0">
+                                            <P class="ho ml-2 mb-0 text-muted "><span
+                                                    class="font-weight-bold">Bonero</span> posted a job update</P>
+                                        </div>
+                                        <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                            <span class="bi h5 bi-x"></span>
+                                            1h</p>
+                                    </div>
+                                    <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                </li>
+                                <li class="cursor-pointer bg-secondary mb-0">
+                                    <div class="d-flex pt-2 pl-3 pr-1">
+                                        <img src="./img/woman2.jpg" alt="" class="avatar-imgg">
+                                        <div>
+                                            <P class="ho ml-2 text-muted "><span class="font-weight-bold">DianeR</span>
+                                                liked your post</P>
+                                        </div>
+                                        <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                            <span class="bi h5 bi-x"></span>
+                                            2h</p>
+                                    </div>
+                                    <hr class="mt-2 mb-0" style="opacity:0.18">
+                                </li>
+                                <li class="cursor-pointer bg-secondary mb-0">
+                                    <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                        <img src="./blog/images/course_img.png" alt="" class="avatar-imgg">
+                                        <div class="mb-0">
+                                            <P class="ho ml-2 mb-0 text-muted "><span
+                                                    class="font-weight-bold">Becca</span> wants to connect with you
+                                            </P>
+                                        </div>
+                                        <p class="small text-muted ml-auto mb-0 mt-0">
+                                            <span class="bi h5 bi-x"></span>
+                                            2s</p>
+                                    </div>
+                                    <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                </li>
+                                <li class="cursor-pointer mb-0">
+                                    <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                        <img src="./img/woman1.jpg" alt="" class="avatar-imgg">
+                                        <div class="mb-0">
+                                            <P class="ho ml-2 mb-0 text-muted "><span
+                                                    class="font-weight-bold">Roselyn</span> commented on your post
+                                            </P>
+                                        </div>
+                                        <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                            <span class="bi h5 bi-x"></span>
+                                            3m</p>
+                                    </div>
+                                    <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                </li>
+                                <li class="cursor-pointer bg-secondary mb-0">
+                                    <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                        <img src="./blog/images/course_img.png" alt="" class="avatar-imgg">
+                                        <div class="mb-0">
+                                            <P class="ho ml-2 mb-0 text-muted "><span
+                                                    class="font-weight-bold">Becca</span> posted a job update</P>
+                                        </div>
+                                        <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                            <span class="bi h5 bi-x"></span>
+                                            1h</p>
+                                    </div>
+                                    <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                </li>
+                                <li class="cursor-pointer mb-0">
+                                    <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                        <img src="./blog/images/course_img.png" alt="" class="avatar-imgg">
+                                        <div class="mb-0">
+                                            <P class="ho ml-2 mb-0 text-muted "><span
+                                                    class="font-weight-bold">Becca</span> sent you a friend request
+                                            </P>
+                                        </div>
+                                        <p class="small text-muted ml-auto mb-0 mt-0">
+                                            <span class="bi h5 bi-x"></span>
+                                            2s</p>
+                                    </div>
+                                    <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                </li>
+                                <li class="cursor-pointer mb-0">
+                                    <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                        <img src="./img/woman1.jpg" alt="" class="avatar-imgg">
+                                        <div class="mb-0">
+                                            <P class="ho ml-2 mb-0 text-muted "><span
+                                                    class="font-weight-bold">Roselyn</span> commented on your post
+                                            </P>
+                                        </div>
+                                        <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                            <span class="bi h5 bi-x"></span>
+                                            3m</p>
+                                    </div>
+                                    <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                </li>
+                                <li class="cursor-pointer mb-0">
+                                    <div class="d-flex pt-2 pl-3 pr-1 pb-0 mb-0">
+                                        <img src="./images/eda.jpg" alt="" class="avatar-imgg">
+                                        <div class="mb-0">
+                                            <P class="ho ml-2 mb-0 text-muted "><span
+                                                    class="font-weight-bold">Bonero</span> posted a job update</P>
+                                        </div>
+                                        <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                            <span class="bi h5 bi-x"></span>
+                                            1h</p>
+                                    </div>
+                                    <hr class="mt-2 mb-0" style="opacity: 0.18;">
+                                </li>
+                                <li class="cursor-pointer bg-secondary pb-2">
+                                    <div class="d-flex pt-2 pl-3 pr-1">
+                                        <img src="./img/woman2.jpg" alt="" class="avatar-imgg">
+                                        <div>
+                                            <P class="ho ml-2 text-muted "><span class="font-weight-bold">DianeR</span>
+                                                liked your post</P>
+                                        </div>
+                                        <p class="small text-muted ml-auto mb-0" style="margin-top: -7px;">
+                                            <span class="bi h5 bi-x"></span>
+                                            2h</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
 
-                            <li class="nav-item dropdown mt-1 align-self-center">
-                                <a class="nav-link text-white" href="#" id="dropdown-user" role="button"
-                                    data-toggle="dropdown" aria-expanded="true">
-                                    <span class="ml-2 h-lg-down dropdown-toggle">
-                                        <i class="fa fa-user-circle fa-2x"></i>
-                                    </span>
-                                </a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#">Profile</a></li>
-                                    <li><a href="">Logout</a></li>
-                                </ul>
-                            </li>
+                        <li class="nav-item dropdown mt-1 align-self-center">
+                            <a class="nav-link text-white" href="#" id="dropdown-user" role="button"
+                                data-toggle="dropdown" aria-expanded="true">
+                                <span class="ml-2 h-lg-down dropdown-toggle">
+                                    <i class="fa fa-user-circle fa-2x"></i>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="">Logout</a></li>
+                            </ul>
+                        </li>
 
-                            <li class="nav-item d-flex position-relative align-self-center px-3">
-                                <input type="text" class="form-control searchbox" name="search" placeholder="Search..">
-                            </li>
+                        <li class="nav-item d-flex position-relative align-self-center px-3">
+                            <input type="text" class="form-control searchbox" name="search" placeholder="Search..">
+                        </li>
 
-                            <!-- <li class="nav-item dropdown">
+                        <!-- <li class="nav-item dropdown">
                                 <a class="nav-link text-white" href="#" id="dropdown-user" role="button" data-toggle="dropdown" aria-expanded="true"> 
                                     <span class="ml-2 h-lg-down dropdown-toggle"> 
                                         <i class="fa fa-user-circle fa-2x"></i> 
@@ -261,11 +502,11 @@
                                    <li><a href="">Logout</a></li>
                                 </ul>
                              </li> -->
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            <!-- container end-->
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- container end-->
         </header>
         <!--/ Header end -->
 
@@ -274,183 +515,11 @@
                 <div class="row mx-md-2 mb-5">
                     <div class="col-lg-12">
                         <div class="row">
-                            <div class="col-lg-8 pl-0 mx-auto">
-                                <div class="card rounded-lg px-3">
-                                    <p class="font-weight-normal my-3">Your connections</p>
-                                </div>
-                                <div class="card rounded-lg p-3">
-                                    <a href="person.html">
-                                        <div class="mr-2 d-flex">
-                                            <img src="blog/images/course_img.png" class="mt-1 avatar-img"
-                                                style="width: 60px; height: 60px;" />
-                                            <div class="ml-3 mt-2">
-                                                <h6 class="mb-0 ho font-weight-bold text-left">Naomi Myanmar
-                                                </h6>
-                                                <p class="mt-1 text-muted text-left py-0" style="line-height: normal;">
-                                                    Data Analyst at Aveep Co.
-                                                    <br>4 mutual connections</p>
-                                            </div>
-                                            <div class="ml-auto mt-3">
-                                                <button class="btn connect-btn px-3">Message</button>
-                                                <i class="bi bi-person-x ml-3 h5 mt-5 pt-5"></i>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card rounded-lg p-3">
-                                    <a href="person.html">
-                                        <div class="mr-2 d-flex">
-                                            <img src="./images/avatar/author.jpg" class="mt-1 avatar-img"
-                                                style="width: 60px; height: 60px;" />
-                                            <div class="ml-3 mt-2">
-                                                <h6 class="mb-0 ho font-weight-bold text-left">Huan Othello
-                                                </h6>
-                                                <p class="mt-1 text-muted text-left py-0" style="line-height: normal;">
-                                                    Data Analyst at Aveep Co.
-                                                    <br>4 mutual connections</p>
-                                            </div>
-                                            <div class="ml-auto mt-3">
-                                                <button class="btn connect-btn px-3">Message</button>
-                                                <i class="bi bi-person-x ml-3 h5 mt-5 pt-5"></i>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card rounded-lg p-3">
-                                    <a href="person.html">
-                                        <div class="mr-2 d-flex">
-                                            <img src="./img/woman2.jpg" class="mt-1 avatar-img"
-                                                style="width: 60px; height: 60px;" />
-                                            <div class="ml-3 mt-2">
-                                                <h6 class="mb-0 ho font-weight-bold text-left">Jessica Versteeg
-                                                </h6>
-                                                <p class="mt-1 text-muted text-left py-0" style="line-height: normal;">
-                                                    Data Analyst at Aveep Co.
-                                                    <br>4 mutual connections</p>
-                                            </div>
-                                            <div class="ml-auto mt-3">
-                                                <button class="btn connect-btn px-3">Message</button>
-                                                <i class="bi bi-person-x ml-3 h5 mt-5 pt-5"></i>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card rounded-lg p-3">
-                                    <a href="person.html">
-                                        <div class="mr-2 d-flex">
-                                            <img src="blog/images/course_img.png" class="mt-1 avatar-img"
-                                                style="width: 60px; height: 60px;" />
-                                            <div class="ml-3 mt-2">
-                                                <h6 class="mb-0 ho font-weight-bold text-left">Naomi Myanmar
-                                                </h6>
-                                                <p class="mt-1 text-muted text-left py-0" style="line-height: normal;">
-                                                    Data Analyst at Aveep Co.
-                                                    <br>4 mutual connections</p>
-                                            </div>
-                                            <div class="ml-auto mt-3">
-                                                <button class="btn connect-btn px-3">Message</button>
-                                                <i class="bi bi-person-x ml-3 h5 mt-5 pt-5"></i>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card rounded-lg p-3">
-                                    <a href="person.html">
-                                        <div class="mr-2 d-flex">
-                                            <img src="./images/avatar/author.jpg" class="mt-1 avatar-img"
-                                                style="width: 60px; height: 60px;" />
-                                            <div class="ml-3 mt-2">
-                                                <h6 class="mb-0 ho font-weight-bold text-left">Huan Othello
-                                                </h6>
-                                                <p class="mt-1 text-muted text-left py-0" style="line-height: normal;">
-                                                    Data Analyst at Aveep Co.
-                                                    <br>4 mutual connections</p>
-                                            </div>
-                                            <div class="ml-auto mt-3">
-                                                <button class="btn connect-btn px-3">Message</button>
-                                                <i class="bi bi-person-x ml-3 h5 mt-5 pt-5"></i>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card rounded-lg p-3">
-                                    <a href="person.html">
-                                        <div class="mr-2 d-flex">
-                                            <img src="./img/woman2.jpg" class="mt-1 avatar-img"
-                                                style="width: 60px; height: 60px;" />
-                                            <div class="ml-3 mt-2">
-                                                <h6 class="mb-0 ho font-weight-bold text-left">Jessica Versteeg
-                                                </h6>
-                                                <p class="mt-1 text-muted text-left py-0" style="line-height: normal;">
-                                                    Data Analyst at Aveep Co.
-                                                    <br>4 mutual connections</p>
-                                            </div>
-                                            <div class="ml-auto mt-3">
-                                                <button class="btn connect-btn px-3">Message</button>
-                                                <i class="bi bi-person-x ml-3 h5 mt-5 pt-5"></i>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card rounded-lg p-3">
-                                    <a href="person.html">
-                                        <div class="mr-2 d-flex">
-                                            <img src="blog/images/course_img.png" class="mt-1 avatar-img"
-                                                style="width: 60px; height: 60px;" />
-                                            <div class="ml-3 mt-2">
-                                                <h6 class="mb-0 ho font-weight-bold text-left">Naomi Myanmar
-                                                </h6>
-                                                <p class="mt-1 text-muted text-left py-0" style="line-height: normal;">
-                                                    Data Analyst at Aveep Co.
-                                                    <br>4 mutual connections</p>
-                                            </div>
-                                            <div class="ml-auto mt-3">
-                                                <button class="btn connect-btn px-3">Message</button>
-                                                <i class="bi bi-person-x ml-3 h5 mt-5 pt-5"></i>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card rounded-lg p-3">
-                                    <a href="person.html">
-                                        <div class="mr-2 d-flex">
-                                            <img src="./images/avatar/author.jpg" class="mt-1 avatar-img"
-                                                style="width: 60px; height: 60px;" />
-                                            <div class="ml-3 mt-2">
-                                                <h6 class="mb-0 ho font-weight-bold text-left">Huan Othello
-                                                </h6>
-                                                <p class="mt-1 text-muted text-left py-0" style="line-height: normal;">
-                                                    Data Analyst at Aveep Co.
-                                                    <br>4 mutual connections</p>
-                                            </div>
-                                            <div class="ml-auto mt-3">
-                                                <button class="btn connect-btn px-3">Message</button>
-                                                <i class="bi bi-person-x ml-3 h5 mt-5 pt-5"></i>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card rounded-lg p-3">
-                                    <a href="person.html">
-                                        <div class="mr-2 d-flex">
-                                            <img src="./img/woman2.jpg" class="mt-1 avatar-img"
-                                                style="width: 60px; height: 60px;" />
-                                            <div class="ml-3 mt-2">
-                                                <h6 class="mb-0 ho font-weight-bold text-left">Jessica Versteeg
-                                                </h6>
-                                                <p class="mt-1 text-muted text-left py-0" style="line-height: normal;">
-                                                    Data Analyst at Aveep Co.
-                                                    <br>4 mutual connections</p>
-                                            </div>
-                                            <div class="ml-auto mt-3">
-                                                <button class="btn connect-btn px-3">Message</button>
-                                                <i class="bi bi-person-x ml-3 h5 mt-5 pt-5"></i>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>                                
-                            </div>
                             <div class="col-lg-3">
+                                <div class="my-3">
+                                    <a href="community.html" class="d-block ho"><i
+                                            class="bi bi-arrow-left-circle mr-2"></i>Back to Community</a>
+                                </div>
                                 <div class="card py-3">
                                     <p class="mx-3">Your Network</p>
                                     <a href="connections.html" class="ho">
@@ -481,170 +550,601 @@
                                         </div>
                                         <div class="px-4 row">
                                             <div class="col-12">
-                                                <a href="person-unknown.html">
-                                                    <div class="mr-2 d-flex mb-0">
-                                                        <img src="blog/images/course_img.png" class="mt-1 avatar-img" />
-                                                        <div class="ml-2 mt-2">
-                                                            <p class="mb-0 ho font-weight-bold text-left">Bree Killgarah
-                                                            </p>
-                                                            <p class="small mt-1 text-left py-0"
-                                                                style="line-height: normal;">Data Analyst at Aveep Co.
-                                                                <br>4 mutual connections</p>
+                                                <div class="popout">
+                                                    <a href="person-unknown.html">
+                                                        <div class="mr-2 d-flex mb-0">
+                                                            <img src="blog/images/course_img.png"
+                                                                class="mt-1 avatar-img" />
+                                                            <div class="ml-2 mt-2">
+                                                                <p class="mb-0 ho font-weight-bold text-left">Bree
+                                                                    Killgarah
+                                                                </p>
+                                                                <p class="small mt-1 text-left py-0"
+                                                                    style="line-height: normal;">Data Analyst at
+                                                                    Aveep
+                                                                    Co.
+                                                                    <br>4 mutual connections</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="pop d-none">
+                                                        <div class="card p-0">
+                                                            <div
+                                                                class="card-body text-center rounded-lg pt-3 pb-0 px-3">
+                                                                <p class="font-12 text-muted"
+                                                                    style="line-height: normal !important;">Talks
+                                                                    about #coaching,
+                                                                    #womenempowerment, #talentdevelopment,
+                                                                    #diversityandinclusion, and
+                                                                    #leadershipdevelopment</p>
+                                                            </div>
+                                                            <div class="card-footer m-0 d-block">
+                                                                <button
+                                                                    class="btn btn-alpher connect-btn mt-1 d-block py-1 mx-auto">Connect</button>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </a>
+                                                </div>
                                                 <hr class="mt-0" style="opacity: 0.1;">
-                                                <a href="person-unknown.html">
-                                                    <div class="mr-2 d-flex mb-0">
-                                                        <img src="./img/woman2.jpg" class="mt-1 avatar-img" />
-                                                        <div class="ml-2 mt-2">
-                                                            <p class="mb-0 ho font-weight-bold text-left">Jessica
-                                                                Versteeg</p>
-                                                            <p class="small mt-1 text-left py-0"
-                                                                style="line-height: normal;">CEO, Women Inc. <br>27
-                                                                mutual connections</p>
+                                                <div class="popout">
+                                                    <a href="person-unknown.html">
+                                                        <div class="mr-2 d-flex mb-0">
+                                                            <img src="./img/woman2.jpg" class="mt-1 avatar-img" />
+                                                            <div class="ml-2 mt-2">
+                                                                <p class="mb-0 ho font-weight-bold text-left">
+                                                                    Jessica
+                                                                    Versteeg</p>
+                                                                <p class="small mt-1 text-left py-0"
+                                                                    style="line-height: normal;">CEO, Women Inc.
+                                                                    <br>27
+                                                                    mutual connections</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="pop d-none">
+                                                        <div class="card p-0">
+                                                            <div
+                                                                class="card-body text-center rounded-lg pt-3 pb-0 px-3">
+                                                                <p class="font-12 text-muted"
+                                                                    style="line-height: normal !important;">Talks
+                                                                    about #coaching,
+                                                                    #womenempowerment, #talentdevelopment,
+                                                                    #diversityandinclusion, and
+                                                                    #leadershipdevelopment</p>
+                                                            </div>
+                                                            <div class="card-footer m-0 d-block">
+                                                                <button
+                                                                    class="btn btn-alpher connect-btn mt-1 d-block py-1 mx-auto">Connect</button>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </a>
+                                                </div>
                                                 <hr class="mt-0" style="opacity: 0.1;">
-                                                <a href="person-unknown.html">
-                                                    <div class="mr-2 d-flex">
-                                                        <img src="images/avatar/author.jpg" class="mt-1 avatar-img" />
-                                                        <div class="ml-2 mt-2">
-                                                            <p class="mb-0 ho font-weight-bold text-left">Osuno Gohrn
-                                                            </p>
-                                                            <p class="small mt-1 text-left py-0"
-                                                                style="line-height: normal;">Digital Marketer <br>90
-                                                                mutual connections</p>
+                                                <div class="popout">
+                                                    <a href="person-unknown.html">
+                                                        <div class="mr-2 d-flex">
+                                                            <img src="images/avatar/author.jpg"
+                                                                class="mt-1 avatar-img" />
+                                                            <div class="ml-2 mt-2">
+                                                                <p class="mb-0 ho font-weight-bold text-left">Osuno
+                                                                    Gohrn
+                                                                </p>
+                                                                <p class="small mt-1 text-left py-0"
+                                                                    style="line-height: normal;">Digital Marketer
+                                                                    <br>90
+                                                                    mutual connections</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="pop d-none">
+                                                        <div class="card p-0">
+                                                            <div
+                                                                class="card-body text-center rounded-lg pt-3 pb-0 px-3">
+                                                                <p class="font-12 text-muted"
+                                                                    style="line-height: normal !important;">Talks
+                                                                    about #coaching,
+                                                                    #womenempowerment, #talentdevelopment,
+                                                                    #diversityandinclusion, and
+                                                                    #leadershipdevelopment</p>
+                                                            </div>
+                                                            <div class="card-footer m-0 d-block">
+                                                                <button
+                                                                    class="btn btn-alpher connect-btn mt-1 d-block py-1 mx-auto">Connect</button>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </a>
+                                                </div>
+                                                <div class="popout">
+                                                    <a href="person-unknown.html">
+                                                        <div class="mr-2 d-flex mb-0">
+                                                            <img src="blog/images/course_img.png"
+                                                                class="mt-1 avatar-img" />
+                                                            <div class="ml-2 mt-2">
+                                                                <p class="mb-0 ho font-weight-bold text-left">Bree
+                                                                    Killgarah
+                                                                </p>
+                                                                <p class="small mt-1 text-left py-0"
+                                                                    style="line-height: normal;">Data Analyst at
+                                                                    Aveep
+                                                                    Co.
+                                                                    <br>4 mutual connections</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="pop d-none">
+                                                        <div class="card p-0">
+                                                            <div
+                                                                class="card-body text-center rounded-lg pt-3 pb-0 px-3">
+                                                                <p class="font-12 text-muted"
+                                                                    style="line-height: normal !important;">Talks
+                                                                    about #coaching,
+                                                                    #womenempowerment, #talentdevelopment,
+                                                                    #diversityandinclusion, and
+                                                                    #leadershipdevelopment</p>
+                                                            </div>
+                                                            <div class="card-footer m-0 d-block">
+                                                                <button
+                                                                    class="btn btn-alpher connect-btn mt-1 d-block py-1 mx-auto">Connect</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <hr class="mt-0" style="opacity: 0.1;">
-                                            </div>
-                                            <div class="col-12">
-                                                <a href="person-unknown.html">
-                                                    <div class="mr-2 d-flex mb-0">
-                                                        <img src="blog/images/course_img.png" class="mt-1 avatar-img" />
-                                                        <div class="ml-2 mt-2">
-                                                            <p class="mb-0 ho font-weight-bold text-left">Bree Killgarah
-                                                            </p>
-                                                            <p class="small mt-1 text-left py-0"
-                                                                style="line-height: normal;">Data Analyst at Aveep Co.
-                                                                <br>4 mutual connections</p>
+                                                <div class="popout">
+                                                    <a href="person-unknown.html">
+                                                        <div class="mr-2 d-flex mb-0">
+                                                            <img src="./img/woman2.jpg" class="mt-1 avatar-img" />
+                                                            <div class="ml-2 mt-2">
+                                                                <p class="mb-0 ho font-weight-bold text-left">
+                                                                    Jessica
+                                                                    Versteeg</p>
+                                                                <p class="small mt-1 text-left py-0"
+                                                                    style="line-height: normal;">CEO, Women Inc.
+                                                                    <br>27
+                                                                    mutual connections</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="pop d-none">
+                                                        <div class="card p-0">
+                                                            <div
+                                                                class="card-body text-center rounded-lg pt-3 pb-0 px-3">
+                                                                <p class="font-12 text-muted"
+                                                                    style="line-height: normal !important;">Talks
+                                                                    about #coaching,
+                                                                    #womenempowerment, #talentdevelopment,
+                                                                    #diversityandinclusion, and
+                                                                    #leadershipdevelopment</p>
+                                                            </div>
+                                                            <div class="card-footer m-0 d-block">
+                                                                <button
+                                                                    class="btn btn-alpher connect-btn mt-1 d-block py-1 mx-auto">Connect</button>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </a>
+                                                </div>
                                                 <hr class="mt-0" style="opacity: 0.1;">
-                                                <a href="person-unknown.html">
-                                                    <div class="mr-2 d-flex mb-0">
-                                                        <img src="./img/woman2.jpg" class="mt-1 avatar-img" />
-                                                        <div class="ml-2 mt-2">
-                                                            <p class="mb-0 ho font-weight-bold text-left">Jessica
-                                                                Versteeg</p>
-                                                            <p class="small mt-1 text-left py-0"
-                                                                style="line-height: normal;">CEO, Women Inc. <br>27
-                                                                mutual connections</p>
+                                                <div class="popout">
+                                                    <a href="person-unknown.html">
+                                                        <div class="mr-2 d-flex">
+                                                            <img src="images/avatar/author.jpg"
+                                                                class="mt-1 avatar-img" />
+                                                            <div class="ml-2 mt-2">
+                                                                <p class="mb-0 ho font-weight-bold text-left">Osuno
+                                                                    Gohrn
+                                                                </p>
+                                                                <p class="small mt-1 text-left py-0"
+                                                                    style="line-height: normal;">Digital Marketer
+                                                                    <br>90
+                                                                    mutual connections</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="pop d-none">
+                                                        <div class="card p-0">
+                                                            <div
+                                                                class="card-body text-center rounded-lg pt-3 pb-0 px-3">
+                                                                <p class="font-12 text-muted"
+                                                                    style="line-height: normal !important;">Talks
+                                                                    about #coaching,
+                                                                    #womenempowerment, #talentdevelopment,
+                                                                    #diversityandinclusion, and
+                                                                    #leadershipdevelopment</p>
+                                                            </div>
+                                                            <div class="card-footer m-0 d-block">
+                                                                <button
+                                                                    class="btn btn-alpher connect-btn mt-1 d-block py-1 mx-auto">Connect</button>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </a>
+                                                </div>
+                                                <div class="popout">
+                                                    <a href="person-unknown.html">
+                                                        <div class="mr-2 d-flex mb-0">
+                                                            <img src="blog/images/course_img.png"
+                                                                class="mt-1 avatar-img" />
+                                                            <div class="ml-2 mt-2">
+                                                                <p class="mb-0 ho font-weight-bold text-left">Bree
+                                                                    Killgarah
+                                                                </p>
+                                                                <p class="small mt-1 text-left py-0"
+                                                                    style="line-height: normal;">Data Analyst at
+                                                                    Aveep
+                                                                    Co.
+                                                                    <br>4 mutual connections</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="pop d-none">
+                                                        <div class="card p-0">
+                                                            <div
+                                                                class="card-body text-center rounded-lg pt-3 pb-0 px-3">
+                                                                <p class="font-12 text-muted"
+                                                                    style="line-height: normal !important;">Talks
+                                                                    about #coaching,
+                                                                    #womenempowerment, #talentdevelopment,
+                                                                    #diversityandinclusion, and
+                                                                    #leadershipdevelopment</p>
+                                                            </div>
+                                                            <div class="card-footer m-0 d-block">
+                                                                <button
+                                                                    class="btn btn-alpher connect-btn mt-1 d-block py-1 mx-auto">Connect</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <hr class="mt-0" style="opacity: 0.1;">
-                                                <a href="person-unknown.html">
-                                                    <div class="mr-2 d-flex">
-                                                        <img src="images/avatar/author.jpg" class="mt-1 avatar-img" />
-                                                        <div class="ml-2 mt-2">
-                                                            <p class="mb-0 ho font-weight-bold text-left">Osuno Gohrn
-                                                            </p>
-                                                            <p class="small mt-1 text-left py-0"
-                                                                style="line-height: normal;">Digital Marketer <br>90
-                                                                mutual connections</p>
+                                                <div class="popout">
+                                                    <a href="person-unknown.html">
+                                                        <div class="mr-2 d-flex mb-0">
+                                                            <img src="./img/woman2.jpg" class="mt-1 avatar-img" />
+                                                            <div class="ml-2 mt-2">
+                                                                <p class="mb-0 ho font-weight-bold text-left">
+                                                                    Jessica
+                                                                    Versteeg</p>
+                                                                <p class="small mt-1 text-left py-0"
+                                                                    style="line-height: normal;">CEO, Women Inc.
+                                                                    <br>27
+                                                                    mutual connections</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="pop d-none">
+                                                        <div class="card p-0">
+                                                            <div
+                                                                class="card-body text-center rounded-lg pt-3 pb-0 px-3">
+                                                                <p class="font-12 text-muted"
+                                                                    style="line-height: normal !important;">Talks
+                                                                    about #coaching,
+                                                                    #womenempowerment, #talentdevelopment,
+                                                                    #diversityandinclusion, and
+                                                                    #leadershipdevelopment</p>
+                                                            </div>
+                                                            <div class="card-footer m-0 d-block">
+                                                                <button
+                                                                    class="btn btn-alpher connect-btn mt-1 d-block py-1 mx-auto">Connect</button>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </a>
+                                                </div>
                                                 <hr class="mt-0" style="opacity: 0.1;">
-                                            </div>
-                                            <div class="col-12">
-                                                <a href="person-unknown.html">
-                                                    <div class="mr-2 d-flex mb-0">
-                                                        <img src="blog/images/course_img.png" class="mt-1 avatar-img" />
-                                                        <div class="ml-2 mt-2">
-                                                            <p class="mb-0 ho font-weight-bold text-left">Bree Killgarah
-                                                            </p>
-                                                            <p class="small mt-1 text-left py-0"
-                                                                style="line-height: normal;">Data Analyst at Aveep Co.
-                                                                <br>4 mutual connections</p>
+                                                <div class="popout">
+                                                    <a href="person-unknown.html">
+                                                        <div class="mr-2 d-flex">
+                                                            <img src="images/avatar/author.jpg"
+                                                                class="mt-1 avatar-img" />
+                                                            <div class="ml-2 mt-2">
+                                                                <p class="mb-0 ho font-weight-bold text-left">Osuno
+                                                                    Gohrn
+                                                                </p>
+                                                                <p class="small mt-1 text-left py-0"
+                                                                    style="line-height: normal;">Digital Marketer
+                                                                    <br>90
+                                                                    mutual connections</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="pop d-none">
+                                                        <div class="card p-0">
+                                                            <div
+                                                                class="card-body text-center rounded-lg pt-3 pb-0 px-3">
+                                                                <p class="font-12 text-muted"
+                                                                    style="line-height: normal !important;">Talks
+                                                                    about #coaching,
+                                                                    #womenempowerment, #talentdevelopment,
+                                                                    #diversityandinclusion, and
+                                                                    #leadershipdevelopment</p>
+                                                            </div>
+                                                            <div class="card-footer m-0 d-block">
+                                                                <button
+                                                                    class="btn btn-alpher connect-btn mt-1 d-block py-1 mx-auto">Connect</button>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </a>
+                                                </div>
+                                                <div class="popout">
+                                                    <a href="person-unknown.html">
+                                                        <div class="mr-2 d-flex mb-0">
+                                                            <img src="blog/images/course_img.png"
+                                                                class="mt-1 avatar-img" />
+                                                            <div class="ml-2 mt-2">
+                                                                <p class="mb-0 ho font-weight-bold text-left">Bree
+                                                                    Killgarah
+                                                                </p>
+                                                                <p class="small mt-1 text-left py-0"
+                                                                    style="line-height: normal;">Data Analyst at
+                                                                    Aveep
+                                                                    Co.
+                                                                    <br>4 mutual connections</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="pop d-none">
+                                                        <div class="card p-0">
+                                                            <div
+                                                                class="card-body text-center rounded-lg pt-3 pb-0 px-3">
+                                                                <p class="font-12 text-muted"
+                                                                    style="line-height: normal !important;">Talks
+                                                                    about #coaching,
+                                                                    #womenempowerment, #talentdevelopment,
+                                                                    #diversityandinclusion, and
+                                                                    #leadershipdevelopment</p>
+                                                            </div>
+                                                            <div class="card-footer m-0 d-block">
+                                                                <button
+                                                                    class="btn btn-alpher connect-btn mt-1 d-block py-1 mx-auto">Connect</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <hr class="mt-0" style="opacity: 0.1;">
-                                                <a href="person-unknown.html">
-                                                    <div class="mr-2 d-flex mb-0">
-                                                        <img src="./img/woman2.jpg" class="mt-1 avatar-img" />
-                                                        <div class="ml-2 mt-2">
-                                                            <p class="mb-0 ho font-weight-bold text-left">Jessica
-                                                                Versteeg</p>
-                                                            <p class="small mt-1 text-left py-0"
-                                                                style="line-height: normal;">CEO, Women Inc. <br>27
-                                                                mutual connections</p>
+                                                <div class="popout">
+                                                    <a href="person-unknown.html">
+                                                        <div class="mr-2 d-flex mb-0">
+                                                            <img src="./img/woman2.jpg" class="mt-1 avatar-img" />
+                                                            <div class="ml-2 mt-2">
+                                                                <p class="mb-0 ho font-weight-bold text-left">
+                                                                    Jessica
+                                                                    Versteeg</p>
+                                                                <p class="small mt-1 text-left py-0"
+                                                                    style="line-height: normal;">CEO, Women Inc.
+                                                                    <br>27
+                                                                    mutual connections</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="pop d-none">
+                                                        <div class="card p-0">
+                                                            <div
+                                                                class="card-body text-center rounded-lg pt-3 pb-0 px-3">
+                                                                <p class="font-12 text-muted"
+                                                                    style="line-height: normal !important;">Talks
+                                                                    about #coaching,
+                                                                    #womenempowerment, #talentdevelopment,
+                                                                    #diversityandinclusion, and
+                                                                    #leadershipdevelopment</p>
+                                                            </div>
+                                                            <div class="card-footer m-0 d-block">
+                                                                <button
+                                                                    class="btn btn-alpher connect-btn mt-1 d-block py-1 mx-auto">Connect</button>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </a>
+                                                </div>
                                                 <hr class="mt-0" style="opacity: 0.1;">
-                                                <a href="person-unknown.html">
-                                                    <div class="mr-2 d-flex">
-                                                        <img src="images/avatar/author.jpg" class="mt-1 avatar-img" />
-                                                        <div class="ml-2 mt-2">
-                                                            <p class="mb-0 ho font-weight-bold text-left">Osuno Gohrn
-                                                            </p>
-                                                            <p class="small mt-1 text-left py-0"
-                                                                style="line-height: normal;">Digital Marketer <br>90
-                                                                mutual connections</p>
+                                                <div class="popout">
+                                                    <a href="person-unknown.html">
+                                                        <div class="mr-2 d-flex">
+                                                            <img src="images/avatar/author.jpg"
+                                                                class="mt-1 avatar-img" />
+                                                            <div class="ml-2 mt-2">
+                                                                <p class="mb-0 ho font-weight-bold text-left">Osuno
+                                                                    Gohrn
+                                                                </p>
+                                                                <p class="small mt-1 text-left py-0"
+                                                                    style="line-height: normal;">Digital Marketer
+                                                                    <br>90
+                                                                    mutual connections</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="pop d-none">
+                                                        <div class="card p-0">
+                                                            <div
+                                                                class="card-body text-center rounded-lg pt-3 pb-0 px-3">
+                                                                <p class="font-12 text-muted"
+                                                                    style="line-height: normal !important;">Talks
+                                                                    about #coaching,
+                                                                    #womenempowerment, #talentdevelopment,
+                                                                    #diversityandinclusion, and
+                                                                    #leadershipdevelopment</p>
+                                                            </div>
+                                                            <div class="card-footer m-0 d-block">
+                                                                <button
+                                                                    class="btn btn-alpher connect-btn mt-1 d-block py-1 mx-auto">Connect</button>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </a>
-                                                <hr class="mt-0" style="opacity: 0.1;">
-                                            </div>
-                                            <div class="col-12">
-                                                <a href="person-unknown.html">
-                                                    <div class="mr-2 d-flex mb-0">
-                                                        <img src="blog/images/course_img.png" class="mt-1 avatar-img" />
-                                                        <div class="ml-2 mt-2">
-                                                            <p class="mb-0 ho font-weight-bold text-left">Bree Killgarah
-                                                            </p>
-                                                            <p class="small mt-1 text-left py-0"
-                                                                style="line-height: normal;">Data Analyst at Aveep Co.
-                                                                <br>4 mutual connections</p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <hr class="mt-0" style="opacity: 0.1;">
-                                                <a href="person-unknown.html">
-                                                    <div class="mr-2 d-flex mb-0">
-                                                        <img src="./img/woman2.jpg" class="mt-1 avatar-img" />
-                                                        <div class="ml-2 mt-2">
-                                                            <p class="mb-0 ho font-weight-bold text-left">Jessica
-                                                                Versteeg</p>
-                                                            <p class="small mt-1 text-left py-0"
-                                                                style="line-height: normal;">CEO, Women Inc. <br>27
-                                                                mutual connections</p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <hr class="mt-0" style="opacity: 0.1;">
-                                                <a href="person-unknown.html">
-                                                    <div class="mr-2 d-flex">
-                                                        <img src="images/avatar/author.jpg" class="mt-1 avatar-img" />
-                                                        <div class="ml-2 mt-2">
-                                                            <p class="mb-0 ho font-weight-bold text-left">Osuno Gohrn
-                                                            </p>
-                                                            <p class="small mt-1 text-left py-0"
-                                                                style="line-height: normal;">Digital Marketer <br>90
-                                                                mutual connections</p>
-                                                        </div>
-                                                    </div>
-                                                </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 pl-0 mx-auto">
+                                <div class="card rounded-lg px-3">
+                                    <p class="font-weight-normal my-3">Your connections</p>
+                                </div>
+                                <div class="card rounded-lg p-3">
+                                    <a href="person.html">
+                                        <div class="mr-2 d-flex">
+                                            <img src="blog/images/course_img.png" class="mt-1 avatar-img"
+                                                style="width: 60px; height: 60px;" />
+                                            <div class="ml-3 mt-2">
+                                                <h6 class="mb-0 ho font-weight-bold text-left">Naomi Myanmar
+                                                </h6>
+                                                <p class="mt-1 text-muted text-left py-0" style="line-height: normal;">
+                                                    Data Analyst at Aveep Co.
+                                                    <br>4 mutual connections</p>
+                                            </div>
+                                            <div class="ml-auto mt-3">
+                                                <button class="btn message-btn px-3">Message</button>
+                                                <i class="bi bi-person-x ml-3 h5 mt-5 pt-5"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card rounded-lg p-3">
+                                    <a href="person.html">
+                                        <div class="mr-2 d-flex">
+                                            <img src="./images/avatar/author.jpg" class="mt-1 avatar-img"
+                                                style="width: 60px; height: 60px;" />
+                                            <div class="ml-3 mt-2">
+                                                <h6 class="mb-0 ho font-weight-bold text-left">Huan Othello
+                                                </h6>
+                                                <p class="mt-1 text-muted text-left py-0" style="line-height: normal;">
+                                                    Data Analyst at Aveep Co.
+                                                    <br>4 mutual connections</p>
+                                            </div>
+                                            <div class="ml-auto mt-3">
+                                                <button class="btn message-btn px-3">Message</button>
+                                                <i class="bi bi-person-x ml-3 h5 mt-5 pt-5"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card rounded-lg p-3">
+                                    <a href="person.html">
+                                        <div class="mr-2 d-flex">
+                                            <img src="./img/woman2.jpg" class="mt-1 avatar-img"
+                                                style="width: 60px; height: 60px;" />
+                                            <div class="ml-3 mt-2">
+                                                <h6 class="mb-0 ho font-weight-bold text-left">Jessica Versteeg
+                                                </h6>
+                                                <p class="mt-1 text-muted text-left py-0" style="line-height: normal;">
+                                                    Data Analyst at Aveep Co.
+                                                    <br>4 mutual connections</p>
+                                            </div>
+                                            <div class="ml-auto mt-3">
+                                                <button class="btn message-btn px-3">Message</button>
+                                                <i class="bi bi-person-x ml-3 h5 mt-5 pt-5"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card rounded-lg p-3">
+                                    <a href="person.html">
+                                        <div class="mr-2 d-flex">
+                                            <img src="blog/images/course_img.png" class="mt-1 avatar-img"
+                                                style="width: 60px; height: 60px;" />
+                                            <div class="ml-3 mt-2">
+                                                <h6 class="mb-0 ho font-weight-bold text-left">Naomi Myanmar
+                                                </h6>
+                                                <p class="mt-1 text-muted text-left py-0" style="line-height: normal;">
+                                                    Data Analyst at Aveep Co.
+                                                    <br>4 mutual connections</p>
+                                            </div>
+                                            <div class="ml-auto mt-3">
+                                                <button class="btn message-btn px-3">Message</button>
+                                                <i class="bi bi-person-x ml-3 h5 mt-5 pt-5"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card rounded-lg p-3">
+                                    <a href="person.html">
+                                        <div class="mr-2 d-flex">
+                                            <img src="./images/avatar/author.jpg" class="mt-1 avatar-img"
+                                                style="width: 60px; height: 60px;" />
+                                            <div class="ml-3 mt-2">
+                                                <h6 class="mb-0 ho font-weight-bold text-left">Huan Othello
+                                                </h6>
+                                                <p class="mt-1 text-muted text-left py-0" style="line-height: normal;">
+                                                    Data Analyst at Aveep Co.
+                                                    <br>4 mutual connections</p>
+                                            </div>
+                                            <div class="ml-auto mt-3">
+                                                <button class="btn message-btn px-3">Message</button>
+                                                <i class="bi bi-person-x ml-3 h5 mt-5 pt-5"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card rounded-lg p-3">
+                                    <a href="person.html">
+                                        <div class="mr-2 d-flex">
+                                            <img src="./img/woman2.jpg" class="mt-1 avatar-img"
+                                                style="width: 60px; height: 60px;" />
+                                            <div class="ml-3 mt-2">
+                                                <h6 class="mb-0 ho font-weight-bold text-left">Jessica Versteeg
+                                                </h6>
+                                                <p class="mt-1 text-muted text-left py-0" style="line-height: normal;">
+                                                    Data Analyst at Aveep Co.
+                                                    <br>4 mutual connections</p>
+                                            </div>
+                                            <div class="ml-auto mt-3">
+                                                <button class="btn message-btn px-3">Message</button>
+                                                <i class="bi bi-person-x ml-3 h5 mt-5 pt-5"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card rounded-lg p-3">
+                                    <a href="person.html">
+                                        <div class="mr-2 d-flex">
+                                            <img src="blog/images/course_img.png" class="mt-1 avatar-img"
+                                                style="width: 60px; height: 60px;" />
+                                            <div class="ml-3 mt-2">
+                                                <h6 class="mb-0 ho font-weight-bold text-left">Naomi Myanmar
+                                                </h6>
+                                                <p class="mt-1 text-muted text-left py-0" style="line-height: normal;">
+                                                    Data Analyst at Aveep Co.
+                                                    <br>4 mutual connections</p>
+                                            </div>
+                                            <div class="ml-auto mt-3">
+                                                <button class="btn message-btn px-3">Message</button>
+                                                <i class="bi bi-person-x ml-3 h5 mt-5 pt-5"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card rounded-lg p-3">
+                                    <a href="person.html">
+                                        <div class="mr-2 d-flex">
+                                            <img src="./images/avatar/author.jpg" class="mt-1 avatar-img"
+                                                style="width: 60px; height: 60px;" />
+                                            <div class="ml-3 mt-2">
+                                                <h6 class="mb-0 ho font-weight-bold text-left">Huan Othello
+                                                </h6>
+                                                <p class="mt-1 text-muted text-left py-0" style="line-height: normal;">
+                                                    Data Analyst at Aveep Co.
+                                                    <br>4 mutual connections</p>
+                                            </div>
+                                            <div class="ml-auto mt-3">
+                                                <button class="btn message-btn px-3">Message</button>
+                                                <i class="bi bi-person-x ml-3 h5 mt-5 pt-5"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card rounded-lg p-3">
+                                    <a href="person.html">
+                                        <div class="mr-2 d-flex">
+                                            <img src="./img/woman2.jpg" class="mt-1 avatar-img"
+                                                style="width: 60px; height: 60px;" />
+                                            <div class="ml-3 mt-2">
+                                                <h6 class="mb-0 ho font-weight-bold text-left">Jessica Versteeg
+                                                </h6>
+                                                <p class="mt-1 text-muted text-left py-0" style="line-height: normal;">
+                                                    Data Analyst at Aveep Co.
+                                                    <br>4 mutual connections</p>
+                                            </div>
+                                            <div class="ml-auto mt-3">
+                                                <button class="btn message-btn px-3">Message</button>
+                                                <i class="bi bi-person-x ml-3 h5 mt-5 pt-5"></i>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -1496,6 +1996,22 @@
                 botn = document.getElementById(btn);
                 botn.closest(".card").style.display = "none"
             }
+
+            function connect() {
+                var connectBtn = document.querySelectorAll(".connect-btn")
+                for (let index = 0; index < connectBtn.length; index++) {
+                    const connectbutton = connectBtn[index];
+
+                    connectbutton.addEventListener("click", function () {
+                        this.classList.add("bg-success")
+                        this.textContent = "Request Sent"
+                        this.style.color = "white"
+                    })
+                }
+
+            }
+
+            connect()
         </script>
         <!-- initialize jQuery Library -->
         <script src="js/jquery.js"></script>
