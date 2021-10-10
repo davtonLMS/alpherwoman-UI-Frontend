@@ -1,0 +1,413 @@
+.lightbox {
+    margin-top: 20px !important;
+}
+
+#notification {
+    width: 290px !important;
+    max-height: 80vh !important;
+    overflow-y: scroll;
+}
+
+body {
+    background-image: url('../images/bg.png');
+}
+
+#notification a {
+    width: 290px !important;
+}
+
+.modal-backdrop.in {
+    display: none !important;
+}
+.reply {
+    max-width: 80%;
+    margin: 0 auto;
+    display: none;
+    /*background: rgba(204, 204, 204, .4);*/
+}
+.blog_comment,
+.dasboard-top-wrapper {
+    background: #fff;
+    border: 0
+}
+.blog_comment div div.mr-2 {
+    min-width: 50px;
+    height: auto;
+}
+.comment_reply {
+    max-width: 80%;
+    border: 1px solid #ccc;
+    background: #eee;
+    border-radius: 5px;
+    display: none;
+}
+.panel {
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.075);
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 24px;
+}
+.panel .panel-heading,
+.panel>:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.bg-primary,
+.bg-primary a {
+    color: #fff;
+}
+.bg-primary {
+    background-color: #5fa2dd;
+}
+.bg-success,
+.bg-success a {
+    color: #fff;
+}
+.bg-success {
+    background-color: #91c957;
+}
+
+.widget-header {
+    padding: 15px 15px 50px;
+    min-height: 100px;
+    position: relative;
+    overflow: hidden;
+}
+.panel .panel-footer,
+.panel>:last-child {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.widget-body {
+    padding: 50px 15px 15px;
+    position: relative;
+}
+.panel-body {
+    padding: 25px 20px;
+}
+.pad-all {
+    padding: 15px;
+}
+.widget-img {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 50%;
+    margin-left: -32px;
+    top: -32px;
+}
+.img-md {
+    width: 64px;
+    height: 64px;
+}
+.widget-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.img-border-light {
+    box-shadow: 0 0 0 4px #fff;
+}
+.img-border {
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
+}
+.mar-no {
+    margin: 0 !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-weight: 600;
+}
+.text-muted,
+a.text-muted:hover,
+a.text-muted:focus,
+a.text-muted:focus {
+    color: #606060;
+}
+.loadMore:focus,
+.loadMore:hover {
+    color: #000;
+}
+.mar-btm {
+    margin-bottom: 15px;
+}
+.pad-ver {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.pad-btm {
+    padding-bottom: 15px;
+}
+.pad-top {
+    padding-top: 8px;
+}
+.small,
+small {
+    font-size: 65%;
+}
+.text-lg {
+    font-size: 75%;
+}
+.btn {
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 0;
+    border: 1px solid 0;
+    font-size: 11px;
+    line-height: 1.42857;
+    vertical-align: middle;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.widget-body p {
+    line-height: 1.2rem
+}
+
+#fullname,
+#occupation,
+#business,
+#interest,
+#industry {
+    text-transform: capitalize;
+}
+.widget-cources-list li a {
+    display: flex;
+}
+.widget-cources-list li a:hover {
+    color: #007bff !important;
+    margin-left: 12px;
+}
+
+.loadReply {
+    border-radius: 50%;
+    padding: 0 6px;
+}
+.form-control {
+    height: 32px;
+}
+
+.add-reply-comments::before {
+    content: "|";
+    margin-right: 10px;
+    font-weight: 400;
+}
+
+:focus {
+    outline: none !important;
+}
+
+.emojioneemoji {
+    width: 16px;
+}
+
+.avatar-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.avatar-imgg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.ho {
+    line-height: normal !important;
+}
+
+li.ho p:not(.small) {
+    font-size: small;
+}
+
+.ho:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.popover {
+    min-width: 330px; /* Max Width of the popover (depending on the container!) */
+    font-family: inherit;
+    border: 1px solid var(--primary-color);
+}
+
+.bg-secondary {
+    background-color: rgba(128, 128, 128, 0.13) !important;
+}
+
+.popover .arrow {
+    display: none;
+}
+
+.post-image {
+    display: none;
+}
+
+.post-image:first-child {
+    display: block;
+}
+
+.menuOptions{
+    position: absolute;
+    width: 200px;
+    z-index: 1 !important;
+    /* left: 80px; */
+    bottom: -165px;
+}
+
+.menuOptions p{
+    font-size: 0.8rem;
+}
+
+.menuOptions a:hover{
+    background-color: #60606028;
+}
+
+/*.col-image .post-image:hover::before {
+    content: "VIEW IMAGE";
+    color: #fff;
+    top: 50%;
+    left: calc(50% - 59px);;
+    font-weight: 500;
+    font-size: 20px;
+    position: absolute;
+    z-index: 99999;
+}*/
+
+/*.col-image .post-image:hover::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    width: calc(100% - 29px);
+    height: 98%;
+    background-image: linear-gradient(120deg, #000, var(--primary-color));
+    opacity: .7;
+    cursor: pointer;
+}*/
+
+@media(max-width: 767px) {
+    .modal .modal-content {
+        max-width: none;
+    }
+}
+@media(max-width: 595px) {
+    .send-msg {
+        display: none;
+    }
+}
+
+/* Chat */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+    position: fixed;
+    bottom: 0;
+    right: 150px;
+    z-index: 9;
+}
+
+.rounded-lg {
+    border-radius: 8px !important;
+}
+
+/* Slider */
+.mySlides {
+    display: none
+}
+.sliderImg {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fading animation */
+.sliderFade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and(max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
