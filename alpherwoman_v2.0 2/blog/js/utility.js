@@ -1901,3 +1901,13 @@ $(document).ready(function(){
         $('#rate_course').find('.rate_id').val(id)
     })
 })
+
+var del = document.querySelectorAll(".delete_link")
+
+for (let i = 0; i < del.length; i++) {
+  const e = del[i];
+  
+  e.addEventListener("click", function(){
+    this.closest(".card--dashboard").classList.add("d-none")
+  })
+}
